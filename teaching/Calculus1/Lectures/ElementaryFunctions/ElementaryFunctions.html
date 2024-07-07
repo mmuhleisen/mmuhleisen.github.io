@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- character encoding -->
+		
+		<meta
+			charset="utf-8"
+		/>
+		
+		<!-- viewport width -->
+		
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1"
+		/>
+		
+		<!-- open graph data -->
+		
+		<meta
+			property="og:image"
+			content=""
+		/>
+		<meta
+			property="og:title"
+			content="Elementary functions"
+		/>
+		<!-- appearance -->
+		
+		<link
+			rel="icon"
+			href=""
+		/>
+		<link
+			rel="stylesheet"
+			href="../../../stylesheets/main.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../../../stylesheets/LaTeXML.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fred-wang.github.io/MathFonts/LatinModern/mathfonts.css"
+		/>
+		<script
+			src="../../../javascript/gridLayout.js"
+			defer
+		></script>
+		<script
+			src="../../../javascript/showHide.js"
+			defer
+		></script>
+		<script
+			src="../../../javascript/tagAbbreviations.js"
+			defer
+		></script>
+		<!-- document data -->
+		<meta
+			name="author"
+			content="Marc Muhleisen"
+		/>
+		<title>
+			Elementary functions
+		</title>
+	</head>
+	<body>
+		<main>
+
+<article class="note">
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Prerequisite: 
+			<a class="internalLink" href="../AbstractFunctions/AbstractFunctions.html" >Abstract Functions
+			</a>
+		</p>
+	</div>
+	<hgroup class="tag heading title">
+		<h1>
+			Title
+		</h1>
+	</hgroup>
+	<h1 class="content heading title">
+		Elementary functions
+	
+	</h1>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+			The vast majority of functions we will talk about can be constructed using the ones listed below as building blocks.
+		
+		</p>
+	</div>
+	<hgroup class="tag body example" id="example-atomic-elementary-function" >
+		<h3>
+			Example
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pyramid"><path d="M2.5 16.88a1 1 0 0 1-.32-1.43l9-13.02a1 1 0 0 1 1.64 0l9 13.01a1 1 0 0 1-.32 1.44l-8.51 4.86a2 2 0 0 1-1.98 0Z"/><path d="M12 2v20"/></svg><span class="index">1</span>
+		</p>
+	</hgroup>
+	<div class="content body example">
+		<p>
+			Fix a real number 
+			<math id="p1.m1" class="ltx_Math" alttext="\alpha\in\mathbb{R}" display="inline"><mrow><mi>α</mi><mo>∈</mo><mi>ℝ</mi></mrow></math>. Among the most common algebraic, exponential, and trigonometric functions are those listed below, along with their domains and codomains.
+		
+		</p>
+		<figure>
+			<table>
+				<tr>
+					<td>	Algebraic
+					</td>
+					<td>	Exponential
+					</td>
+					<td>	Trigonometric
+					</td>
+				</tr>
+				<tr>
+					<td>	<table id=""  class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_left"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\begin{array}[]{c}f:\mathbb{R}\to\mathbb{R}\\
+f(x)=\alpha\end{array}\par" display="block"><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>α</mi></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table>
+					</td>
+					<td>	<table id=""  class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_left"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\begin{array}[]{c}f:\mathbb{R}\to\mathbb{R}\\
+f(x)=e^{x}\end{array}\par" display="block"><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table>
+					</td>
+					<td>	<table id=""  class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_left"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\begin{array}[]{c}f:\mathbb{R}\to\mathbb{R}\\
+f(x)=\sin(x)\end{array}\par" display="block"><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<td>	<table id=""  class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_left"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\begin{array}[]{c}f:\mathbb{R}\to\mathbb{R}\\
+f(x)=x\end{array}\par" display="block"><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table>
+					</td>
+					<td>	<table id=""  class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_left"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\begin{array}[]{c}f:\mathbb{R}^{+}\to\mathbb{R}\\
+f(x)=\log(x)\end{array}\par" display="block"><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mo>+</mo></msup><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table>
+					</td>
+					<td>	<table id=""  class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_left"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\begin{array}[]{c}f:(-1,1)\to\mathbb{R}\\
+f(x)=\sin^{-1}(x)\end{array}\par" display="block"><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>sin</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table>
+					</td>
+				</tr>
+				<tr>
+					<td>	<table id=""  class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_left"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\begin{array}[]{c}f:\mathbb{R}^{\times}\to\mathbb{R}\\
+f(x)=1/x\end{array}\par" display="block"><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mo>×</mo></msup><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo>/</mo><mi>x</mi></mrow></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table>
+					</td>
+					<td>	<table id=""  class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_left"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\begin{array}[]{c}f:\mathbb{R}^{+}\to\mathbb{R}\\
+f(x)=x^{\alpha}\end{array}\par" display="block"><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mo>+</mo></msup><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mi>α</mi></msup></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table>
+					</td>
+					<td>	<table id=""  class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_left"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\begin{array}[]{c}f:\mathbb{R}\to\mathbb{R}\\
+f(x)=\tan^{-1}(x)\end{array}\par" display="block"><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>tan</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table>
+					</td>
+				</tr>
+			</table>
+		</figure>
+		<p>
+			(In this class, 
+			<math id="p1.m1" class="ltx_Math" alttext="\log(x)" display="inline"><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> will always refer to the natural logarithm; the notation 
+			<math id="p1.m1" class="ltx_Math" alttext="\ln(x)" display="inline"><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> will be avoided. There is no reason other than personal preference. Also, 
+			<math id="p1.m1" class="ltx_Math" alttext="e^{x}" display="inline"><msup><mi>e</mi><mi>x</mi></msup></math> is often alternatively denoted 
+			<math id="p1.m1" class="ltx_Math" alttext="\exp(x)" display="inline"><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>, both in this class and elsewhere.)
+		
+		</p>
+	</div>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+			In fact, we have a name for functions which can be obtained recursively from the ones listed above using a combination of arithmetic operations and composition.
+		
+		</p>
+	</div>
+	<hgroup class="tag body definition" id="definition-elementary-function" >
+		<h3>
+			Definition
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-box"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span class="index">2</span>
+		</p>
+	</hgroup>
+	<div class="content body definition">
+		<p>
+			Let 
+			<math id="p1.m1" class="ltx_Math" alttext="U=(a,b)" display="inline"><mrow><mi>U</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></math> be an open interval, and let 
+			<math id="p1.m1" class="ltx_Math" alttext="f:U\to\mathbb{R}" display="inline"><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>U</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow></math> be a function. We say that 
+			<math id="p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is elementary if it is one of the functions listed in the previous example, or if it is a sum, product, or composite of elementary functions.
+		
+		</p>
+	</div>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+			The purpose of this definition is to give a name to the set of functions which you can simply “write down.” The following example illustrates this idea.
+		
+		</p>
+	</div>
+	<hgroup class="tag body example" id="example-elementary-function" >
+		<h3>
+			Example
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pyramid"><path d="M2.5 16.88a1 1 0 0 1-.32-1.43l9-13.02a1 1 0 0 1 1.64 0l9 13.01a1 1 0 0 1-.32 1.44l-8.51 4.86a2 2 0 0 1-1.98 0Z"/><path d="M12 2v20"/></svg><span class="index">3</span>
+		</p>
+	</hgroup>
+	<div class="content body example">
+		<p>
+			The expression 
+			<table id=""  class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_left"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\par\frac{x^{3}+\pi x^{2}-ex+\sqrt{2}}{x^{2}+1}\par\par" display="block"><mfrac><mrow><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>−</mo><mrow><mi>e</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><msqrt><mn>2</mn></msqrt></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table>
+			 defines an elementary function 
+			<math id="p1.m1" class="ltx_Math" alttext="\mathbb{R}\to\mathbb{R}" display="inline"><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></math>, as do 
+			<math id="p1.m1" class="ltx_Math" alttext="e^{e^{e^{e^{x}}}}" display="inline"><msup><mi>e</mi><msup><mi>e</mi><msup><mi>e</mi><msup><mi>e</mi><mi>x</mi></msup></msup></msup></msup></math> and 
+			<math id="p1.m1" class="ltx_Math" alttext="\sin(\tfrac{\pi}{2}-x)=\cos(x)" display="inline"><mrow><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.
+		
+		</p>
+	</div>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+			It’s true that elementary functions are those functions that you can just “write down,” but not everything you can just “write down” is a function! Being explicit about domains and codomains of functions helps us avoid the following pitfall.
+		
+		</p>
+	</div>
+	<hgroup class="tag body warning" id="warning-undefined-composition" >
+		<h3>
+			Warning
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg><span class="index">4</span>
+		</p>
+	</hgroup>
+	<div class="content body warning">
+		<p>
+			There are expressions such as 
+			<math id="p1.m1" class="ltx_Math" alttext="\log(1+x-e^{x})" display="inline"><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo>−</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></math> which look like elementary functions, but which may not be defined on a given interval. In this example, 
+			<math id="p1.m1" class="ltx_Math" alttext="\log" display="inline"><mi>log</mi></math> is a function 
+			<math id="p1.m1" class="ltx_Math" alttext="\mathbb{R}^{+}\to\mathbb{R}" display="inline"><mrow><msup><mi>ℝ</mi><mo>+</mo></msup><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></math> defined only on the positive real numbers while the maximum value of the function 
+			<math id="p1.m1" class="ltx_Math" alttext="f:\mathbb{R}\to\mathbb{R}" display="inline"><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow></math> given by 
+			<math id="p1.m1" class="ltx_Math" alttext="f(x)=1+x-e^{x}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo>−</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></mrow></math> is zero. Thus, neither can the functions 
+			<math id="p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> and 
+			<math id="p1.m1" class="ltx_Math" alttext="\log" display="inline"><mi>log</mi></math> be composed, nor can any of their restrictions be composed. If one had taken care to check the domains and codomains of 
+			<math id="p1.m1" class="ltx_Math" alttext="\log(x)" display="inline"><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and 
+			<math id="p1.m1" class="ltx_Math" alttext="f(x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>, one would never even have written down the expression 
+			<math id="p1.m1" class="ltx_Math" alttext="\log(1+x-e^{x})" display="inline"><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo>−</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></math>!
+		
+		</p>
+	</div>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+			A nice feature of elementary functions is that they can be visualized using string diagrams. For example, the function 
+			<math id="p1.m1" class="ltx_Math" alttext="\mathbb{R}\to\mathbb{R}" display="inline"><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></math> given by the formula
+		
+		</p>
+		<p>
+			<table id=""  class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_left"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\par\sin^{-1}\left(\frac{e^{x}-1}{e^{x}+1}\right)\par\par" display="block"><mrow><msup><mi>sin</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>−</mo><mn>1</mn></mrow><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table>
+		
+		</p>
+		<p>
+			can be represented by the string diagram below, which shows exactly how this elementary function is constructed out of building blocks.
+		
+		</p>
+		<p>
+			<pre class="mermaid">
+			
+			stateDiagram
+				invsin: arcsin
+				div: ÷
+				num: +
+				denom: +
+				numconst: -1
+				denomconst: 1
+				numexp: exp
+				denomexp: exp
+				invsin --> [*]
+				div --> invsin
+				num --> div: Numerator
+				denom --> div: Denominator
+				numconst --> num
+				numexp --> num
+				denomconst --> denom
+				denomexp --> denom
+				[*] --> numexp
+				[*] --> denomexp
+			</pre>
+		
+		</p>
+		<p>
+			In closing, we’ll mention that elementary functions are very special. Even though there are (infinitely) many elementary functions, and even though these elementary functions can get quite complicated (despite their name!), the vast majority of abstract functions are 
+			<strong>	not
+			</strong> elementary. Many more examples will arise when we discuss integration.
+		
+		</p>
+	</div>
+	<hgroup class="tag body example" id="example-non-elementary-function" >
+		<h3>
+			Example
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pyramid"><path d="M2.5 16.88a1 1 0 0 1-.32-1.43l9-13.02a1 1 0 0 1 1.64 0l9 13.01a1 1 0 0 1-.32 1.44l-8.51 4.86a2 2 0 0 1-1.98 0Z"/><path d="M12 2v20"/></svg><span class="index">5</span>
+		</p>
+	</hgroup>
+	<div class="content body example">
+		<p>
+			The following functions are not elementary.
+		
+		</p>
+		<ol>
+			<li>
+				<p>
+					The floor function 
+					<math id="p1.m1" class="ltx_Math" alttext="\lfloor-\rfloor:\mathbb{R}\to\mathbb{R}" display="inline"><mrow><mrow><mo stretchy="false">⌊</mo><mo lspace="0em" rspace="0em">−</mo><mo rspace="0.278em" stretchy="false">⌋</mo></mrow><mo rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow></math> whose value at 
+					<math id="p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> is the greatest integer which is less than or equal to 
+					<math id="p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>. For example, 
+					<math id="p1.m1" class="ltx_Math" alttext="\lfloor 4\rfloor=4=\lfloor 4.1\rfloor" display="inline"><mrow><mrow><mo stretchy="false">⌊</mo><mn>4</mn><mo stretchy="false">⌋</mo></mrow><mo>=</mo><mn>4</mn><mo>=</mo><mrow><mo stretchy="false">⌊</mo><mn>4.1</mn><mo stretchy="false">⌋</mo></mrow></mrow></math> and 
+					<math id="p1.m1" class="ltx_Math" alttext="\lfloor 3.9\rfloor=3=\lfloor 3.5\rfloor" display="inline"><mrow><mrow><mo stretchy="false">⌊</mo><mn>3.9</mn><mo stretchy="false">⌋</mo></mrow><mo>=</mo><mn>3</mn><mo>=</mo><mrow><mo stretchy="false">⌊</mo><mn>3.5</mn><mo stretchy="false">⌋</mo></mrow></mrow></math>.
+				
+				</p>
+			</li>
+			<li>
+				<p>
+					The Dirichlet function 
+					<math id="p1.m1" class="ltx_Math" alttext="\delta:\mathbb{R}\to\mathbb{R}" display="inline"><mrow><mi>δ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow></math> whose value at all rational numbers is 
+					<math id="p1.m1" class="ltx_Math" alttext="1" display="inline"><mn>1</mn></math>, and whose value at all irrational numbers is 
+					<math id="p1.m1" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>. For instance, 
+					<math id="p1.m1" class="ltx_Math" alttext="\delta(\pi)=0" display="inline"><mrow><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>π</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> although 
+					<table id=""  class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="S0.Ex1X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex1X.m2" class="ltx_Math" alttext="\displaystyle 1" display="inline"><mn>1</mn></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex1X.m3" class="ltx_Math" alttext="\displaystyle=\delta(3)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex1Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex1Xa.m2" class="ltx_Math" alttext="\displaystyle=\delta(3.1)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3.1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex1Xb"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex1Xb.m2" class="ltx_Math" alttext="\displaystyle=\delta(3.14)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3.14</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex1Xc"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex1Xc.m2" class="ltx_Math" alttext="\displaystyle=\delta(3.141)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3.141</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex1Xd"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex1Xd.m2" class="ltx_Math" alttext="\displaystyle=\delta(3.1415)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3.1415</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex1Xe"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex1Xe.m2" class="ltx_Math" alttext="\displaystyle=\delta(3.14159)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3.14159</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+<tbody id="S0.Ex1Xf"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex1Xf.m2" class="ltx_Math" alttext="\displaystyle=\cdots" display="inline"><mrow><mi></mi><mo>=</mo><mi mathvariant="normal">⋯</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table>
+				
+				</p>
+			</li>
+		</ol>
+	</div>
+	<div class="divider">
+	</div>
+	<hgroup class="tag body menu">
+		<h3>
+			Menu
+		</h3>
+		<button>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-chevron-right"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg>
+		</button>
+	</hgroup>
+	<div class="divider menu">
+	</div>
+	<menu class="content body menu">
+		<li class="home">
+			Homepage (Coming Soon)
+		</li>
+		<li>
+			More ...
+		</li>
+		<li class="expand">
+			Collapse All (Coming Soon)
+		</li>
+		<li class="search">
+			<label for="search">
+				Search (Coming Soon)
+			</label>
+			<input type="search" id="search" disabled/>
+		</li>
+		<li class="navigation">
+			See also: (Coming Soon)
+		</li>
+		<li class="updated">
+			Updated 07/06/24
+		</li>
+	</menu>
+
+</article>
+		</main>
+		<script type="module">
+			import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+			mermaid.initialize({ startOnLoad: true , theme: "neutral" });
+		</script>
+	</body>
+</html>
