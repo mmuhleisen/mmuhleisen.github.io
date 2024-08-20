@@ -3,14 +3,44 @@
   margin: 0;
 }
 
+.note > .tag.axiom .lucide {
+  padding-right: 1pt;
+}
+
+.note > .tag.definition .lucide {
+  padding-right: 3pt;
+}
+
+.note > .tag.example .lucide {
+  padding-right: 3pt;
+}
+
+.note > .tag.corollary .lucide {
+  padding-right: 2pt;
+}
+
 .note > .tag.theorem .lucide {
-  width: 1.1cap;
-  height: 1.1cap;
-  padding-inline-end: 0.1em;
+  padding-right: 3pt;
+}
+
+.note > .tag.proposition .lucide {
+  padding-right: 2pt;
 }
 
 .note > .tag.proof {
   justify-content: space-between;
+}
+
+.note > .tag.question .lucide {
+  padding-right: 3pt;
+}
+
+.note > .tag.remark .lucide {
+  padding-right: 2pt;
+}
+
+.note > .tag.warning .lucide {
+  padding-right: 2pt;
 }
 
 .note > .title * {
@@ -29,6 +59,7 @@
   vertical-align: sub;
   width: 1em;
   height: 1em;
+  position: static;
 }
 
 .note > .tag.section > h2 {
@@ -39,6 +70,13 @@
   display: none;
 }
 
+.note > .tag.subsection .lucide {
+  vertical-align: sub;
+  width: 1em;
+  height: 1em;
+  position: static;
+}
+
 .note > dl.cv > dt.what + dd {
   grid-column: 1/3;
   font-weight: bold;
@@ -47,7 +85,6 @@
 .note > dl.cv > dt.comment + dd {
   grid-column: 1/3;
   font-size: smaller;
-  line-height: 1rlh;
 }
 
 .note > .tag.cv {
@@ -146,6 +183,8 @@
 .note > .tag .lucide {
   width: 1.1cap;
   height: 1.1cap;
+  position: relative;
+  bottom: -0.05cap;
 }
 
 .note > .content > :first-child {
@@ -166,6 +205,32 @@
 
 .note > .content .attribution::after {
   content: ")";
+}
+
+.note > .content {
+  overflow: scroll;
+}
+
+.note > .content *:not(li) {
+  overflow: scroll;
+}
+
+.note > .content table:not(.ltx_eqn_table) tr:first-of-type > td {
+  border-bottom: 0.2em solid grey;
+}
+
+.note > .content table:not(.ltx_eqn_table) {
+  border-collapse: collapse;
+}
+
+.note > .content table:not(.ltx_eqn_table) td {
+  vertical-align: top;
+  text-align: left;
+  padding: 0 0.5em;
+}
+
+.note > .content figure {
+  margin-right: 0;
 }
 
 .note > .divider {
@@ -197,24 +262,15 @@
 .note * > p:last-of-type {
 	margin-bottom: 0;
 }*/
-.note table:not(.ltx_eqn_table) tr:first-of-type > td {
-  border-bottom: 0.2em solid grey;
+a {
+  color: black;
 }
 
-.note table:not(.ltx_eqn_table) {
-  border-collapse: collapse;
+@media (prefers-color-scheme: dark) {
+  a {
+    color: white;
+  }
 }
-
-.note table:not(.ltx_eqn_table) td {
-  vertical-align: top;
-  text-align: left;
-  padding: 0 0.5em;
-}
-
-.note figure {
-  margin-right: 0;
-}
-
 body {
   min-height: 100vh;
   margin: 0;

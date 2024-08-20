@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- character encoding -->
+		
+		<meta
+			charset="utf-8"
+		/>
+		
+		<!-- viewport width -->
+		
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1"
+		/>
+		
+		<!-- open graph data -->
+		
+		<meta
+			property="og:image"
+			content=""
+		/>
+		<meta
+			property="og:title"
+			content="Single Variable Calculus"
+		/>
+		<!-- appearance -->
+		
+		<link
+			rel="icon"
+			href=""
+		/>
+		<link
+			rel="stylesheet"
+			href="../../../stylesheets/main.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../../../stylesheets/LaTeXML.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fred-wang.github.io/MathFonts/LatinModern/mathfonts.css"
+		/>
+		<script
+			src="../../../javascript/gridLayout.js"
+			defer
+		></script>
+		<script
+			src="../../../javascript/showHide.js"
+			defer
+		></script>
+		<script
+			src="../../../javascript/tagAbbreviations.js"
+			defer
+		></script>
+		<!-- document data -->
+		<meta
+			name="author"
+			content="Marc Muhleisen"
+		/>
+		<title>
+			Single Variable Calculus
+		</title>
+	</head>
+	<body>
+		<main>
+
+<article class="note">
+	<hgroup class="tag heading title">
+		<h1>
+			Title
+		</h1>
+	</hgroup>
+	<h1 class="content heading title">
+	Single Variable Calculus
+	</h1>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		University of Pennsylvania<br/>MATH 1400<br/>Summer II, 2024<br/>MWF 12:00pm-2:30pm<br/>David Rittenhouse Lab (DRL)<br/>Room A2
+		</p>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">1</span>
+		</p>
+	</hgroup>
+	<h2 class="content heading section">
+	Contact
+	</h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Instructor
+		</p>
+		<ul>
+			<li>
+				<p>
+				Marc Mühleisen
+				</p>
+			</li>
+			<li>
+				<p>
+				Email: See <a class="externalLink" href="https://canvas.upenn.edu/" >Canvas</a>
+				</p>
+			</li>
+			<li>
+				<p>
+				Office: DRL 4C5
+				</p>
+			</li>
+			<li>
+				<p>
+				Office Hours:
+				</p>
+				<ul>
+					<li>
+						<p>
+						Sundays 5-6pm on zoom (link on Canvas)
+						</p>
+					</li>
+					<li>
+						<p>
+						Tuesdays 4:30pm-5:30pm
+						</p>
+					</li>
+					<li>
+						<p>
+						Thursdays 11:30am-12:30pm
+						</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+				Preferred Appellation: Marc
+				</p>
+			</li>
+			<li>
+				<p>
+				Pronouns: he/him
+				</p>
+			</li>
+		</ul>
+		<p>
+		I am a graduate student in the mathematics department here at Penn. I arrived in the midst of the pandemic, specialized in algebraic geometry and category theory (which I will eagerly talk about to anyone interested), and now plan to graduate next year in the Spring. I also gained a great deal of experience communicating math during my time at Penn. I have been a TA for Penn’s calculus, linear algebra, and discrete math courses, I have advised Penn math majors in our department’s Directed Reading Program, I’ve been employed by a private tutoring firm where I worked with high school students, I volunteered through Penn as an arithmetic teacher in a New Jersey state prison, and I participate in our department’s seminars and attend conferences. I have met many students at many levels through these varied activities, I have enjoyed discussing all kinds of math with them, and now I look forward to sharing with you ideas that laid the foundation for much of modern science.
+		</p>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">2</span>
+		</p>
+	</hgroup>
+	<h2 class="content heading section">
+	Prerequisites
+	</h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<ul>
+			<li>
+				<p>
+				Suggested: familiarity with differential calculus at the level of MATH 1300.
+				</p>
+			</li>
+			<li>
+				<p>
+				Required: solid understanding of precalculus.
+				</p>
+			</li>
+		</ul>
+		<p>
+		The summer version of MATH 1400 covers in five weeks what is otherwise diluted over a full semester. We will therefore spend a day on what otherwise spans a week. Without prior exposure to differential calculus, this already rapid pace will seem especially daunting during the first three classes. While our treatment of derivatives during these classes will be self-contained and will adequately prepare us for the rest of the course, it is not a substitute for MATH 1300. In short, keeping up with the course may require some extra devotion, especially for those with little to no calculus background.
+		</p>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">3</span>
+		</p>
+	</hgroup>
+	<h2 class="content heading section">
+	Course Description
+	</h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Functions may be considered the core object of study in mathematics. From finding the zeros of linear and quadratic polynomials to establishing trig identities and log rules, functions already play a significant role in precalculus mathematics education. To understand a function at this level is to know the relationship between input and output values, allowing one to solve the quintessential precalculus problem: find <math id="p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> if <math id="p1.m1" class="ltx_Math" alttext="f(x)=0" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> and <math id="p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is some complicated function. The precalculus guiding principle is therefore to study functions individually, by how they act on numbers.
+		</p>
+		<p>
+		The guiding principle in calculus is to study functions in relation to each other. For example, our first unit will be differentiation, a procedure which transforms functions into other functions. The quintessential calculus problem is correspondingly to find <math id="p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>, a function, if <math id="p1.m1" class="ltx_Math" alttext="D(f)=0" display="inline"><mrow><mrow><mi>D</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> and <math id="p1.m1" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> is some procedure involving the derivative. Equations like these are called differential equations, and they are good at describing everything from the economy to elementary particles. Two techniques for solving differential equations that we’ll cover in this class are called integration and Taylor series. Along the way we’ll find many other uses for these concepts, from measuring sizes (i.e. lengths, areas, volumes) to controlling errors in approximations.
+		</p>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">4</span>
+		</p>
+	</hgroup>
+	<h2 class="content heading section">
+	Schedule
+	</h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Subject to change
+		</p>
+		<figure>
+			<table>
+				<tr>
+					<td> </td>
+					<td>Date</td>
+					<td>Agenda</td>
+				</tr>
+				<tr>
+					<td><strong>Week 1</strong></td>
+					<td></td>
+					<td><strong>Calculation and Interpretation of Derivatives</strong></td>
+				</tr>
+				<tr>
+					<td>Day 01</td>
+					<td>7/05</td>
+					<td>Functions, Product and Chain Rules</td>
+				</tr>
+				<tr>
+					<td>Day 02</td>
+					<td>7/08</td>
+					<td>Derivative Estimates, Higher Derivatives</td>
+				</tr>
+				<tr>
+					<td>Day 03</td>
+					<td>7/10</td>
+					<td>Implicit Differentiation, L’Hôpital’s Rule</td>
+				</tr>
+				<tr>
+					<td><strong>Week 2</strong></td>
+					<td></td>
+					<td><strong>Calculation and Interpretation of Integrals</strong></td>
+				</tr>
+				<tr>
+					<td>Day 04</td>
+					<td>7/12</td>
+					<td>Area, Fundamental Theorem of Calculus</td>
+				</tr>
+				<tr>
+					<td>Day 05</td>
+					<td>7/15</td>
+					<td>Differentiation Techniques Backward, Trig Integrals</td>
+				</tr>
+				<tr>
+					<td>Day 06</td>
+					<td>7/17</td>
+					<td>Differential Equations, Improper Integrals</td>
+				</tr>
+				<tr>
+					<td><strong>Week 3</strong></td>
+					<td></td>
+					<td><strong>Infinite Sums</strong></td>
+				</tr>
+				<tr>
+					<td>Day 07</td>
+					<td>7/19</td>
+					<td>Polynomials, Taylor’s Theorem</td>
+				</tr>
+				<tr>
+					<td>Day 08</td>
+					<td>7/22</td>
+					<td>Power Series, Convergence Tests</td>
+				</tr>
+				<tr>
+					<td>Day 09</td>
+					<td>7/24</td>
+					<td>Taylor Series, Optimization</td>
+				</tr>
+				<tr>
+					<td><strong>Week 4</strong></td>
+					<td></td>
+					<td><strong>Topics in Integration</strong></td>
+				</tr>
+				<tr>
+					<td>Day 10</td>
+					<td>7/26</td>
+					<td>Partial Fractions, Trig Substitution</td>
+				</tr>
+				<tr>
+					<td>Day 11</td>
+					<td>7/29</td>
+					<td>Change of Coordinates, Volume</td>
+				</tr>
+				<tr>
+					<td>Day 12</td>
+					<td>7/31</td>
+					<td>Parametrics, Arc Length and Surface Area</td>
+				</tr>
+				<tr>
+					<td><strong>Week 5</strong></td>
+					<td></td>
+					<td><strong>Applications of Calculus</strong></td>
+				</tr>
+				<tr>
+					<td>Day 13</td>
+					<td>8/02</td>
+					<td>Applications of Derivatives, Special Topics</td>
+				</tr>
+				<tr>
+					<td>Day 14</td>
+					<td>8/05</td>
+					<td>Applications of Integrals, Special Topics</td>
+				</tr>
+				<tr>
+					<td>Day 15</td>
+					<td>8/07</td>
+					<td>Review</td>
+				</tr>
+				<tr>
+					<td><strong>Week 6</strong></td>
+					<td></td>
+					<td><strong>Final</strong></td>
+				</tr>
+				<tr>
+					<td>Day 16</td>
+					<td>8/09</td>
+					<td>Exam</td>
+				</tr>
+			</table>
+		</figure>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">5</span>
+		</p>
+	</hgroup>
+	<h2 class="content heading section">
+	Grading
+	</h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		In order to pass the course, you must receive a perfect score on the syllabus quiz, which you will take on canvas and submit before the third class. You may refer to the syllabus during the quiz and you will have unlimited attempts. The purpose of the syllabus quiz is to prove to me that you’ve read and understood the administrative details in this syllabus. Once you’ve passed the syllabus quiz, your raw grade will be determined from the following components, and then curved upward if necessary to match grade distributions from recent summer iterations of MATH 1400.
+		</p>
+		<ul>
+			<li>
+				<p>
+				(0%) Homework. For every topic on the syllabus, dozens if not hundreds of problems will be listed on Canvas, spread across various calculus textbooks as well as a variety of online resources. Homework will neither be collected nor graded. Please take note of the following.
+				</p>
+				<ul>
+					<li>
+						<p>
+						You are absolutely not expected to do all the homework problems. There are deliberately far too many problems to solve in between classes, and the point is to stop when you feel confident about the material.
+						</p>
+					</li>
+					<li>
+						<p>
+						You are expected to find solutions to the homework problems you do work out either online, in the back of the textbook they were assigned from, or by any other means (see <a class="internalLink" href="#resources" >Resources</a>).
+						</p>
+					</li>
+					<li>
+						<p>
+						If you cannot reconcile your own solution to a problem with any solutions you look up, come talk to me about it. You will always have a chance to talk to me in between classes (see <a class="internalLink" href="#office-hours" >Office Hours</a>).
+						</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+				(20%) Final Exam. There will be a traditional final exam during the last class.
+				</p>
+				<ul>
+					<li>
+						<p>
+						The final is designed to take 1.5 hours, but you will have 2.5 hours.
+						</p>
+					</li>
+					<li>
+						<p>
+						The final is cumulative.
+						</p>
+					</li>
+					<li>
+						<p>
+						You may use any printed resource to complete the final, for instance your class notes, a “cheat sheet,” or indeed any textbook(s) of your choice.
+						</p>
+					</li>
+					<li>
+						<p>
+						You may not use any electronic device to complete the final unless pre-approved.
+						</p>
+					</li>
+					<li>
+						<p>
+						Unless you have a pre-approved arrangement, not being present at the final will result in a grade of zero. No exceptions will be made.
+						</p>
+					</li>
+					<li>
+						<p>
+						Collaboration on the final exam is forbidden.
+						</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+				(80%) Quizzes. The pace of the course demands each class begin with a quiz. Please take note of the following.
+				</p>
+				<ul>
+					<li>
+						<p>
+						There will <em>not</em> be a quiz on the first day of class (or on the day of the final).
+						</p>
+					</li>
+					<li>
+						<p>
+						There <em>will</em> be a quiz on review day (8/7/24) emphasizing the material covered in the previous class (8/5/24).
+						</p>
+					</li>
+					<li>
+						<p>
+						Each quiz is designed to take five minutes, but you will have fifteen.
+						</p>
+					</li>
+					<li>
+						<p>
+						Each quiz will emphasize the material covered in the previous class; at the same time, each quiz will be cumulative.
+						</p>
+					</li>
+					<li>
+						<p>
+						You may use any printed resource to complete quizzes, for instance your class notes, a “cheat sheet,” or indeed any textbook(s) of your choice.
+						</p>
+					</li>
+					<li>
+						<p>
+						You may not use any electronic device to complete quizzes unless pre-approved.
+						</p>
+					</li>
+					<li>
+						<p>
+						Unless you have a pre-approved arrangement, not being present at a quiz will result in a grade of zero. No exceptions will be made.
+						</p>
+					</li>
+					<li>
+						<p>
+						Collaboration on quizzes is forbidden.
+						</p>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<hgroup class="tag heading section" id="resources" >
+		<h2>
+			Section
+		</h2>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">6</span>
+		</p>
+	</hgroup>
+	<h2 class="content heading section">
+	Resources 
+	</h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Since homework will not be collected, you must not only solve assigned problems but also look up solutions yourself to be sure your work is correct. To that end, several textbooks list answers in an appendix or work certain problems out in an accompanying student solution manual; moreover, a great many websites contain repositories of calculus problems with solutions, and a great deal of software has been written to solve just about any calculus problem. You are encouraged to use any of these resources, not just the few listed below (but you are not required to use any one in particular).
+		</p>
+		<p>
+		For our course, the main purpose of these resources is to serve as repositories of problems and solutions rather than as pedagogical material. While I will teach you calculus in a slightly different way than all of the resources listed below, the problems I will test you on will be just like the problems in these resources, namely, standard calculus problems. I nevertheless encourage you to seek out more and more perspectives on calculus if you find yourself stuck on a concept. Each resource explains each concept a little differently—and if you don’t find one that clicks, come talk to me and we’ll figure it out.
+		</p>
+		<p>
+		You may find generative AI and calculus-specific software very useful for solving math problems, but I seriously discourage you from coming to rely on them. On the one hand, the problem with generative AI is that it may output complete nonsense—even if beautifully formatted and boldly asserted. Worse, it will drivel about even on simple calculus queries. You simply cannot (yet?) trust ChatGPT to get word problems right with any kind of consistency. On the other hand, the problem with most calculus-specific software is its limitation to evaluating expressions when the essential step in many problems is to come up with the correct expression to evaluate in the first place.
+		</p>
+		<p>
+		Many but not all of the following resources are available for free. Regarding textbooks, remember you have access to the <a class="externalLink" href="https://www.library.upenn.edu/mpa" >MPA library</a> located in DRL 3N1 as well as <a class="externalLink" href="https://www.library.upenn.edu/" >other libraries</a> at Penn. <em>Any edition of a textbook will do: just email me what edition you’re using and I will add problems from that edition to future assignments.</em> Note also that some textbooks have ”Early Transcendental” stunt doubles. For the purposes of our course, this is an irrelevant distinction—the versions both with and without some variant of the phrase “Early Transcendental” in the title will do perfectly well. Finally, do let me know if you benefitted from a calculus resource I have not listed so I may recommend it to students in the future.
+		</p>
+		<ul>
+			<li>
+				<p>
+				Some Traditional Calculus Textbooks (alphabetical by last name)
+				</p>
+				<ul>
+					<li>
+						<p>
+						<em>Calculus</em> (Volume 1) by Tom Apostol. Most recent edition: 2nd, 1991.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus and Its Applications</em> by Larry Goldstein et al. Most recent edition: 15th, 2022.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus: An Integrated Approach to Functions and Their Rates of Change</em> (Volume 2) by Robin Gottlieb. Most recent edition: 1st, 2018.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Thomas’ Calculus</em> by Joel Hass et al. Most recent edition: 15th, 2022.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus: Single Variable</em> by Deborah Hughes-Hallett et al. Most recent edition: 8th, 2020.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>First Course in Calculus</em> by Serge Lang. Most recent edition: 5th, 1986.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus</em> by Ron Larson and Bruce Edwards. Most recent edition: 12th, 2022.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus</em> by Jon Rogawski, Colin Adams, and Robert Franzosa. Most recent edition: 4th, 2019.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus</em> by Michael Spivak. Most recent edition: 4th, 2008.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus</em> by James Stewart. Most recent edition: 9th, 2020.
+						</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+				Learning Calculus Online (no particular order)
+				</p>
+				<ul>
+					<li>
+						<p>
+						Paul Dawkins’s <a class="externalLink" href="https://tutorial.math.lamar.edu/" >Online Math Notes</a>, which has a huge repository of both <a class="externalLink" href="https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,P" >problems</a> and <a class="externalLink" href="https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,S" >solutions</a>.
+						</p>
+					</li>
+					<li>
+						<p>
+						Gilbert Strang’s <a class="externalLink" href="https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/" >Calculus Online Textbook</a>. Solutions are available chapter-by-chapter in the online <a class="externalLink" href="https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/pages/instructors-manual/" >instructor’s manual</a>.
+						</p>
+					</li>
+					<li>
+						<p>
+						David Guichard’s <a class="externalLink" href="https://www.whitman.edu/mathematics/multivariable/index.cgi" >online textbook</a>.
+						</p>
+					</li>
+					<li>
+						<p>
+						Sigurd Angenent, an author of a calculus textbook used at the University of Wisconsin Madison, links to his book in the README file of its <a class="externalLink" href="https://github.com/SigurdAngenent/WisconsinCalculus" >GitHub repository</a>.
+						</p>
+					</li>
+					<li>
+						<p>
+						The works of our very own faculty at Penn.
+						</p>
+						<ul>
+							<li>
+								<p>
+								Nakia Rimmer’s “Calculus II Workbook,” which contains over a hundred worked-out integral calculus problems, is available from the MPA library in DRL or can be purchased from his <a class="externalLink" href="https://calccoach.com" >Calc Coach</a> website.
+								</p>
+							</li>
+							<li>
+								<p>
+								Rimmer’s <a class="externalLink" href="https://youtube.com/@nakiarimmer?si=2WyBsF4r-kIvrYQE" >YouTube channel</a> also has playlists on a variety of calculus topics.
+								</p>
+							</li>
+							<li>
+								<p>
+								Robert Ghrist’s <a class="externalLink" href="https://youtube.com/@prof-g?si=9H4jQx5FpdWT4gVr" >YouTube channel</a> contains the single variable calculus video textbook “Calculus Green.” As of this writing it remains a work in progress.
+								</p>
+							</li>
+							<li>
+								<p>
+								The Penn Online Learning <a class="externalLink" href="https://youtube.com/playlist?list=PLKc2XOQp0dMwj9zAXD5LlWpriIXIrGaNb&si=XUA64pnhA1_i_wUP" >YouTube channel</a> hosts an earlier anthology of Ghrist’s single variable calculus videos.
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p>
+						The Fall 2006 Single Variable Calculus course taught by David Jerison at MIT on the <a class="externalLink" href="https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/" >OpenCourseWare</a> site. If you look around the assignments and exams tabs, you’ll find many problems with accompanying solutions. I first learned calculus watching the recorded lectures available here!
+						</p>
+					</li>
+					<li>
+						<p>
+						Our syllabus overlaps considerably with the College Board’s BC Calculus curriculum, so you may consider making use of the corresponding <a class="externalLink" href="https://www.khanacademy.org/math/ap-calculus-bc" >Khan Academy course</a>, which consists of videos and check-your-understanding type problems.
+						</p>
+					</li>
+					<li>
+						<p>
+						The quality of <a class="externalLink" href="https://www.wikipedia.org/" >Wikipedia</a> math articles typically ranges from good to excellent. While they often contain examples, they never contain practice problems.
+						</p>
+					</li>
+					<li>
+						<p>
+						H. Jerome Keisler’s textbook <a class="externalLink" href="https://people.math.wisc.edu/~hkeisler/calc.html" >Elementary Calculus</a> is remarkable for taking the concept of infinitesimal quantities very seriously. We will not take this approach in our class, but do take a look if you’re interested!
+						</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+				Calculus Software (no particular order)
+				</p>
+				<ul>
+					<li>
+						<p>
+						<a class="externalLink" href="https://www.wolframalpha.com/" >Wolfram Alpha</a>, a lite (but easier to use) version of <a class="externalLink" href="https://www.wolfram.com/mathematica/" >Mathematica</a>.
+						</p>
+					</li>
+					<li>
+						<p>
+						<a class="externalLink" href="https://www.maplesoft.com/products/Maple/" >Maple</a>
+						</p>
+					</li>
+					<li>
+						<p>
+						<a class="externalLink" href="https://mathsolver.microsoft.com/en" >Microsoft Math Solver</a>
+						</p>
+					</li>
+					<li>
+						<p>
+						<a class="externalLink" href="https://www.symbolab.com/" >Symbolab</a>
+						</p>
+					</li>
+					<li>
+						<p>
+						I removed ChatGPT and other AI software from this list because I was unimpressed by their unreliable performance in experiments.
+						</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+				The resources on the department’s <a class="externalLink" href="https://www.math.upenn.edu/undergraduate/getting-help/calculus-help" >Calculus Help</a> site.
+				</p>
+			</li>
+		</ul>
+		<p>
+		I was not compensated in any way for listing any of the resources above.
+		</p>
+	</div>
+	<hgroup class="tag heading section" id="office-hours" >
+		<h2>
+			Section
+		</h2>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">7</span>
+		</p>
+	</hgroup>
+	<h2 class="content heading section">
+	Office Hours 
+	</h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		My office is Room 4C5 in DRL, the same building where our class meets for lectures. 
+		</p>
+		<p>
+		By default, you may attend my office hours. I will hold three weekly, one-hour-long, open-door meetings where you can come ask me any calculus question you have. The meetings will take place every Tuesday (in-person), Thursday (in-person), and Sunday (virtual) at times determined by questionnaire on the first day of class.
+		</p>
+		<p>
+		Alternatively, you may request one-on-one meetings with me. Since the class size is small, I am open to scheduling up to three weekly, fifteen-minute-long, private sessions with anyone who would prefer to opt-out of office hours. This format is intended as an alternative, so I would expect you <em>not</em> to attend office hours. The sessions will be more helpful to you if you arrive with an agenda in mind, and if you miss two sessions without giving me prior notice, I will cancel all of our remaining meetings (but you will once again have the chance to attend office hours).
+		</p>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">8</span>
+		</p>
+	</hgroup>
+	<h2 class="content heading section">
+	Email Policy
+	</h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		I will answer your emailed administrative questions promptly; I won’t email answers to calculus questions, but you are still welcome to send them because I will then cover them at the beginning of the next class, office hour, or private session which you attend.
+		</p>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">9</span>
+		</p>
+	</hgroup>
+	<h2 class="content heading section">
+	Registrar Dates
+	</h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		<em>If for whatever reason you choose to drop or to withdraw from the course, please note that it is <strong>not</strong> an automatic process. You must inform the registrar of your intent to drop/withdraw using Path@Penn, and the date by which you do so may have an effect on your financial obligation to the university.</em> Official dates and more information can be found on the <a class="externalLink" href="https://summer.sas.upenn.edu/academic-calendar" >PennSummer</a> website—do not rely on the following dates.
+		</p>
+		<figure>
+			<table>
+				<tr>
+					<td>Date</td>
+					<td>Event</td>
+				</tr>
+				<tr>
+					<td>July 5</td>
+					<td>Session II classes begin</td>
+				</tr>
+				<tr>
+					<td>July 12</td>
+					<td>Last day to add/drop a course with no financial obligation</td>
+				</tr>
+				<tr>
+					<td>July 18</td>
+					<td>Last day to drop a course with 50% financial obligation</td>
+				</tr>
+				<tr>
+					<td>Aug 3</td>
+					<td>Last day to withdraw from a course</td>
+				</tr>
+				<tr>
+					<td>Aug 9</td>
+					<td>Session II classes end</td>
+				</tr>
+			</table>
+		</figure>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">10</span>
+		</p>
+	</hgroup>
+	<h2 class="content heading section">
+	Feedback
+	</h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Feedback on the course is always welcome. You may email me at any time, or contact me anonymously as follows using one of the following channels.
+		</p>
+		<ul>
+			<li>
+				<p>
+				My mailbox in the math office (DRL 4W1)
+				</p>
+			</li>
+			<li>
+				<p>
+				The containers attached to my office door (DRL 4C5)
+				</p>
+			</li>
+			<li>
+				<p>
+				This <a class="externalLink" href="https://forms.gle/smDh5CC6eWF5W6X5A" >google form</a>
+				</p>
+			</li>
+		</ul>
+		<p>
+		There will also be a survey available from 7/19/24 to 7/22/24, where you will be especially encouraged to provide feedback about all aspects of the course.
+		</p>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">11</span>
+		</p>
+	</hgroup>
+	<h2 class="content heading section">
+	Accommodations
+	</h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Students requiring academic accommodations should register their needs with the office of Student Disabilities Services (SDS). Instructors and TAs cannot provide any academic accommodations without prior instruction from SDS. In addition, if you plan to register a disability with that office which will require any action, you should email me within 48 hours of joining the course, even if your accommodations have not yet been registered or approved. You do not need to disclose of the nature of your accommodations or disability, but knowing that you are registered makes it easier to work with SDS to get you the accommodations you need.
+		</p>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">12</span>
+		</p>
+	</hgroup>
+	<h2 class="content heading section">
+	Discrimination and Harassment
+	</h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Your peers are your most valuable learning resource, and it is imperative that we maintain a welcoming environment, inside and outside of class, where every single student is empowered as a member of the course community. We take all of Penn’s discrimination and harassment policies very seriously.
+		</p>
+	</div>
+	<div class="divider">
+	</div>
+	<hgroup class="tag body menu">
+		<h3>
+			Menu
+		</h3>
+		<button>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-chevron-right"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg>
+		</button>
+	</hgroup>
+	<div class="divider menu">
+	</div>
+	<menu class="content body menu">
+		<li class="home">
+			<a href="https://mmuhleisen.github.io/Homepage/Homepage.html">
+				Marc's Homepage
+			</a>
+		</li>
+		<li>
+			More ...
+		</li>
+		<li class="expand">
+			Collapse All (Coming Soon)
+		</li>
+		<li class="search">
+			<label for="search">
+				Search (Coming Soon)
+			</label>
+			<input type="search" id="search" disabled/>
+		</li>
+		<li class="navigation">
+			See also: (Coming Soon)
+		</li>
+		<li class="webdesign">
+			Site Design: Marc Mühleisen
+		</li>
+		<li class="updated">
+			Updated 08/20/24
+		</li>
+	</menu>
+
+</article>
+		</main>
+		<script type="module">
+			import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+			mermaid.initialize({ startOnLoad: true , theme: "neutral" });
+		</script>
+	</body>
+</html>
