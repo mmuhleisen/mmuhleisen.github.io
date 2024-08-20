@@ -208,11 +208,11 @@
 }
 
 .note > .content {
-  overflow: scroll;
+  overflow-x: auto;
 }
 
-.note > .content *:not(li) {
-  overflow: scroll;
+.note > .content *:not(li, .ltx_Math, .ltx_Math *, .ltx_eqn_table *) {
+  overflow-x: auto;
 }
 
 .note > .content table:not(.ltx_eqn_table) tr:first-of-type > td {
@@ -231,6 +231,10 @@
 
 .note > .content figure {
   margin-right: 0;
+}
+
+.note > .content figure:has(> .ltx_eqn_table) {
+  margin: 0;
 }
 
 .note > .divider {
