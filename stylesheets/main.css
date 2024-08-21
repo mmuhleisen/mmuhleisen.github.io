@@ -211,7 +211,7 @@
   overflow-x: auto;
 }
 
-.note > .content *:not(ol, ul, dl, li, .ltx_Math, .ltx_Math *, .ltx_eqn_table *) {
+.note > .content figure {
   overflow-x: auto;
 }
 
