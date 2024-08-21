@@ -211,7 +211,7 @@
   overflow-x: auto;
 }
 
-.note > .content *:not(li, .ltx_Math, .ltx_Math *, .ltx_eqn_table *) {
+.note > .content *:not(ol, ul, dl, li, .ltx_Math, .ltx_Math *, .ltx_eqn_table *) {
   overflow-x: auto;
 }
 
@@ -279,6 +279,10 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: "Computer Modern", sans-serif;
+}
+
+* {
+  line-height: 1.4em;
 }
 
 @font-face {
