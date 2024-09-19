@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- character encoding -->
+		
+		<meta
+			charset="utf-8"
+		/>
+		
+		<!-- viewport width -->
+		
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1"
+		/>
+		
+		<!-- open graph data -->
+		
+		<meta
+			property="og:image"
+			content=""
+		/>
+		<meta
+			property="og:title"
+			content="Permutations and Cycles"
+		/>
+		<!-- appearance -->
+		
+		<link
+			rel="icon"
+			href=""
+		/>
+		<link
+			rel="stylesheet"
+			href="../../../stylesheets/main.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../../../stylesheets/LaTeXML.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fred-wang.github.io/MathFonts/LatinModern/mathfonts.css"
+		/>
+		<script
+			src="../../../javascript/gridLayout.js"
+			defer
+		></script>
+		<script
+			src="../../../javascript/showHide.js"
+			defer
+		></script>
+		<script
+			src="../../../javascript/tagAbbreviations.js"
+			defer
+		></script>
+		<!-- document data -->
+		<meta
+			name="author"
+			content="Marc Muhleisen"
+		/>
+		<title>
+			Permutations and Cycles
+		</title>
+	</head>
+	<body>
+		<main>
+
+<article class="note">
+	<hgroup class="tag heading title">
+		<h1>
+			Title
+		</h1>
+	</hgroup>
+	<h1 class="content heading title">
+	Permutations and Cycles
+	</h1>
+	<hgroup class="tag body definition">
+		<h3>
+			Definition
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-box"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span class="index">1</span>
+		</p>
+	</hgroup>
+	<div class="content body definition">
+		<p>
+		A permutation of a set <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> is a bijection <math id="p1.m1" class="ltx_Math" alttext="X\to X" display="inline"><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></math>.
+		</p>
+	</div>
+	<hgroup class="tag body proposition">
+		<h3>
+			Proposition
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle"><path d="M13.73 4a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/></svg><span class="index">2</span>
+		</p>
+	</hgroup>
+	<div class="content body proposition">
+		<p>
+		The permutations of a set <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> are a group under composition. We write <math id="p1.m1" class="ltx_Math" alttext="S_{X}" display="inline"><msub><mi>S</mi><mi>X</mi></msub></math> for this group, or sometimes <math id="p1.m1" class="ltx_Math" alttext="S_{n}" display="inline"><msub><mi>S</mi><mi>n</mi></msub></math> when <math id="p1.m1" class="ltx_Math" alttext="X=\{1,2,\ldots,n\}" display="inline"><mrow><mi>X</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></mrow></math>.
+		</p>
+	</div>
+	<hgroup class="tag body proof">
+		<h3>
+			Proof
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square"><rect width="18" height="18" x="3" y="3" rx="2"/></svg>
+		</p>
+	</hgroup>
+	<div class="content body proof">
+		<p>
+		Let <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> be a set, and let <math id="p1.m1" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> be the set of all functions <math id="p1.m1" class="ltx_Math" alttext="X\to X" display="inline"><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></math>. The composite of two functions <math id="p1.m1" class="ltx_Math" alttext="X\to X" display="inline"><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></math> is also a function <math id="p1.m1" class="ltx_Math" alttext="X\to X" display="inline"><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></math>, so composition is a binary operation on <math id="p1.m1" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math>. Function composition is associative, and the identity function is an identity element for composition. Since bijections are, by definition, precisely the invertible elements of <math id="p1.m1" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> for composition, that <math id="p1.m1" class="ltx_Math" alttext="S_{X}=E^{\times}" display="inline"><mrow><msub><mi>S</mi><mi>X</mi></msub><mo>=</mo><msup><mi>E</mi><mo>×</mo></msup></mrow></math> is a group follows from the first homework problem.
+		</p>
+	</div>
+	<hgroup class="tag body definition">
+		<h3>
+			Definition
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-box"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span class="index">3</span>
+		</p>
+	</hgroup>
+	<div class="content body definition">
+		<p>
+		A subpermutation of a permutation <math id="p1.m1" class="ltx_Math" alttext="\sigma:X\to X" display="inline"><mrow><mi>σ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></mrow></math> is a permutation <math id="p1.m1" class="ltx_Math" alttext="Y\to Y" display="inline"><mrow><mi>Y</mi><mo stretchy="false">→</mo><mi>Y</mi></mrow></math> obtained by restricting <math id="p1.m1" class="ltx_Math" alttext="\sigma" display="inline"><mi>σ</mi></math> to a subset <math id="p1.m1" class="ltx_Math" alttext="Y\subseteq X" display="inline"><mrow><mi>Y</mi><mo>⊆</mo><mi>X</mi></mrow></math>.
+		</p>
+	</div>
+	<hgroup class="tag body remark">
+		<h3>
+			Remark
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><span class="index">4</span>
+		</p>
+	</hgroup>
+	<div class="content body remark">
+		<p>
+		To give a subpermutation is to give a subset <math id="p1.m1" class="ltx_Math" alttext="Y\subset X" display="inline"><mrow><mi>Y</mi><mo>⊂</mo><mi>X</mi></mrow></math> satisfying <math id="p1.m1" class="ltx_Math" alttext="\sigma^{-1}(Y)=Y" display="inline"><mrow><mrow><msup><mi>σ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>Y</mi></mrow></math>. Unpacking that condition says <math id="p1.m1" class="ltx_Math" alttext="x\in Y" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>Y</mi></mrow></math> iff <math id="p1.m1" class="ltx_Math" alttext="\sigma(x)\in Y" display="inline"><mrow><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi>Y</mi></mrow></math>.
+		</p>
+	</div>
+	<hgroup class="tag body example">
+		<h3>
+			Example
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pyramid"><path d="M2.5 16.88a1 1 0 0 1-.32-1.43l9-13.02a1 1 0 0 1 1.64 0l9 13.01a1 1 0 0 1-.32 1.44l-8.51 4.86a2 2 0 0 1-1.98 0Z"/><path d="M12 2v20"/></svg><span class="index">5</span>
+		</p>
+	</hgroup>
+	<div class="content body example">
+		<ol>
+			<li>
+				<p>
+				There are always so-called “trivial” subpermutations corresponding to <math id="p1.m1" class="ltx_Math" alttext="\varnothing\subseteq X" display="inline"><mrow><mi mathvariant="normal">∅</mi><mo>⊆</mo><mi>X</mi></mrow></math> and <math id="p1.m1" class="ltx_Math" alttext="X\subseteq X" display="inline"><mrow><mi>X</mi><mo>⊆</mo><mi>X</mi></mrow></math>.
+				</p>
+			</li>
+			<li>
+				<p>
+				The set of even numbers is a nontrivial subpermutation of <math id="p1.m1" class="ltx_Math" alttext="\mathbb{Z}\overset{+2}{\longrightarrow}\mathbb{Z}" display="inline"><mrow><mi>ℤ</mi><mo>⁢</mo><mover accent="true"><mo stretchy="false">⟶</mo><mrow><mo>+</mo><mn>2</mn></mrow></mover><mo>⁢</mo><mi>ℤ</mi></mrow></math>. The set <math id="p1.m1" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> of positive even numbers is not a subpermutation because <math id="p1.m1" class="ltx_Math" alttext="-2\in\sigma^{-1}(Y)" display="inline"><mrow><mrow><mo>−</mo><mn>2</mn></mrow><mo>∈</mo><mrow><msup><mi>σ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> while <math id="p1.m1" class="ltx_Math" alttext="-2\notin Y" display="inline"><mrow><mrow><mo>−</mo><mn>2</mn></mrow><mo>∉</mo><mi>Y</mi></mrow></math>.
+				</p>
+			</li>
+			<li>
+				<p>
+				Let <math id="p1.m1" class="ltx_Math" alttext="X=\{1,2,3,4\}" display="inline"><mrow><mi>X</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo stretchy="false">}</mo></mrow></mrow></math>. The subsets <math id="p1.m1" class="ltx_Math" alttext="\{1,3\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo stretchy="false">}</mo></mrow></math> and <math id="p1.m1" class="ltx_Math" alttext="\{2,4\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo stretchy="false">}</mo></mrow></math> are nontrivial subpermutations of the bijection <math id="p1.m1" class="ltx_Math" alttext="X\to X" display="inline"><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></math> taking <math id="p1.m1" class="ltx_Math" alttext="1\mapsto 3" display="inline"><mrow><mn>1</mn><mo stretchy="false">↦</mo><mn>3</mn></mrow></math>, <math id="p1.m1" class="ltx_Math" alttext="2\mapsto 4" display="inline"><mrow><mn>2</mn><mo stretchy="false">↦</mo><mn>4</mn></mrow></math>, <math id="p1.m1" class="ltx_Math" alttext="3\mapsto 1" display="inline"><mrow><mn>3</mn><mo stretchy="false">↦</mo><mn>1</mn></mrow></math>, and <math id="p1.m1" class="ltx_Math" alttext="4\mapsto 2" display="inline"><mrow><mn>4</mn><mo stretchy="false">↦</mo><mn>2</mn></mrow></math>.
+				</p>
+			</li>
+		</ol>
+	</div>
+	<hgroup class="tag body definition">
+		<h3>
+			Definition
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-box"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span class="index">6</span>
+		</p>
+	</hgroup>
+	<div class="content body definition">
+		<p>
+		Let <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> be a finite set of cardinality (i.e. size) <math id="p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>, and let <math id="p1.m1" class="ltx_Math" alttext="\sigma:X\to X" display="inline"><mrow><mi>σ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></mrow></math> be a permutation. Then the following conditions on <math id="p1.m1" class="ltx_Math" alttext="\sigma" display="inline"><mi>σ</mi></math> are equivalent, in which case <math id="p1.m1" class="ltx_Math" alttext="\sigma" display="inline"><mi>σ</mi></math> is called a cycle (or a cyclic permutation).
+		</p>
+		<ol>
+			<li>
+				<p>
+				The only subpermutations of <math id="p1.m1" class="ltx_Math" alttext="\sigma" display="inline"><mi>σ</mi></math> are <math id="p1.m1" class="ltx_Math" alttext="\varnothing" display="inline"><mi mathvariant="normal">∅</mi></math> and <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>.
+				</p>
+			</li>
+			<li>
+				<p>
+				There exists some <math id="p1.m1" class="ltx_Math" alttext="x\in X" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></math> such that the map <math id="p1.m1" class="ltx_Math" alttext="n\to X" display="inline"><mrow><mi>n</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></math> taking <math id="p1.m1" class="ltx_Math" alttext="k\mapsto\sigma^{k}(x)" display="inline"><mrow><mi>k</mi><mo stretchy="false">↦</mo><mrow><msup><mi>σ</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> is a bijection.
+				</p>
+			</li>
+			<li>
+				<p>
+				For all <math id="p1.m1" class="ltx_Math" alttext="x\in X" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></math>, the map <math id="p1.m1" class="ltx_Math" alttext="n\to X" display="inline"><mrow><mi>n</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></math> taking <math id="p1.m1" class="ltx_Math" alttext="k\mapsto\sigma^{k}(x)" display="inline"><mrow><mi>k</mi><mo stretchy="false">↦</mo><mrow><msup><mi>σ</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> is a bijection.
+				</p>
+			</li>
+		</ol>
+	</div>
+	<hgroup class="tag body proof">
+		<h3>
+			Proof
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square"><rect width="18" height="18" x="3" y="3" rx="2"/></svg>
+		</p>
+	</hgroup>
+	<div class="content body proof">
+		<ul>
+			<li>
+				<p>
+				Since we assumed <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> is nonempty, 3 implies 2.
+				</p>
+			</li>
+			<li>
+				<p>
+				For 2 implies 1, claim that <math id="p1.m1" class="ltx_Math" alttext="\sigma^{n}(x)=x" display="inline"><mrow><mrow><msup><mi>σ</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow></math> and prove this using <math id="p1.m1" class="ltx_Math" alttext="n\to X" display="inline"><mrow><mi>n</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></math> being a bijection. Now take a nonempty subpermutation <math id="p1.m1" class="ltx_Math" alttext="\sigma^{k}(x)\in Y\subseteq X" display="inline"><mrow><mrow><msup><mi>σ</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi>Y</mi><mo>⊆</mo><mi>X</mi></mrow></math>. Since <math id="p1.m1" class="ltx_Math" alttext="\sigma^{-1}(Y)=Y" display="inline"><mrow><mrow><msup><mi>σ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>Y</mi></mrow></math> and <math id="p1.m1" class="ltx_Math" alttext="\sigma^{k}(x)\in Y" display="inline"><mrow><mrow><msup><mi>σ</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi>Y</mi></mrow></math>, it follows <math id="p1.m1" class="ltx_Math" alttext="\sigma^{k+1}(x)\in Y" display="inline"><mrow><mrow><msup><mi>σ</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi>Y</mi></mrow></math>. Repeating this argument shows <math id="p1.m1" class="ltx_Math" alttext="\sigma^{j}(x)\in Y" display="inline"><mrow><mrow><msup><mi>σ</mi><mi>j</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi>Y</mi></mrow></math> for all <math id="p1.m1" class="ltx_Math" alttext="j\geq k" display="inline"><mrow><mi>j</mi><mo>≥</mo><mi>k</mi></mrow></math>. Finally, the claim implies every element of <math id="p1.m1" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> can be written as <math id="p1.m1" class="ltx_Math" alttext="\sigma^{j}(x)" display="inline"><mrow><msup><mi>σ</mi><mi>j</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> for some <math id="p1.m1" class="ltx_Math" alttext="j\geq k" display="inline"><mrow><mi>j</mi><mo>≥</mo><mi>k</mi></mrow></math>.
+				</p>
+			</li>
+			<li>
+				<p>
+				For 1 implies 3, take <math id="p1.m1" class="ltx_Math" alttext="x\in X" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></math> and consider the image of <math id="p1.m1" class="ltx_Math" alttext="n\to X" display="inline"><mrow><mi>n</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></math>. If the image is <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> you have a surjection between finite sets of the same size, hence a bijection. If not then <math id="p1.m1" class="ltx_Math" alttext="\sigma^{i}(x)=\sigma^{j}(x)" display="inline"><mrow><mrow><msup><mi>σ</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>σ</mi><mi>j</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> for some <math id="p1.m1" class="ltx_Math" alttext="i\neq j" display="inline"><mrow><mi>i</mi><mo>≠</mo><mi>j</mi></mrow></math> both less than <math id="p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>, hence <math id="p1.m1" class="ltx_Math" alttext="\sigma^{|i-j|}(x)=x" display="inline"><mrow><mrow><msup><mi>σ</mi><mrow><mo stretchy="false">|</mo><mrow><mi>i</mi><mo>−</mo><mi>j</mi></mrow><mo stretchy="false">|</mo></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow></math> and since <math id="p1.m1" class="ltx_Math" alttext="|i-j|&lt;n" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>i</mi><mo>−</mo><mi>j</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>n</mi></mrow></math> the image is a nontrivial subpermutation (which contradicts the hypothesis).
+				</p>
+			</li>
+		</ul>
+	</div>
+	<hgroup class="tag body remark">
+		<h3>
+			Remark
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><span class="index">7</span>
+		</p>
+	</hgroup>
+	<div class="content body remark">
+		<p>
+		Condition 1 says cycles are as small as possible. Condition 2 says <math id="p1.m1" class="ltx_Math" alttext="X=\{x,\sigma x,\sigma^{2}x,\ldots,\sigma^{n-1}x\}" display="inline"><mrow><mi>X</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo>,</mo><mrow><mi>σ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mrow><msup><mi>σ</mi><mn>2</mn></msup><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msup><mi>σ</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></math> for some <math id="p1.m1" class="ltx_Math" alttext="x\in X" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></math>. Condition 3 says that when you can write <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> in this form for some <math id="p1.m1" class="ltx_Math" alttext="x\in X" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></math>, you can write it in this form for any <math id="p1.m1" class="ltx_Math" alttext="x\in X" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></math>.
+		</p>
+	</div>
+	<hgroup class="tag body example">
+		<h3>
+			Example
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pyramid"><path d="M2.5 16.88a1 1 0 0 1-.32-1.43l9-13.02a1 1 0 0 1 1.64 0l9 13.01a1 1 0 0 1-.32 1.44l-8.51 4.86a2 2 0 0 1-1.98 0Z"/><path d="M12 2v20"/></svg><span class="index">8</span>
+		</p>
+	</hgroup>
+	<div class="content body example">
+		<p>
+		In light of Condition 2 in the previous definition, we write <math id="p1.m1" class="ltx_Math" alttext="(1342)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1342</mn><mo stretchy="false">)</mo></mrow></math> for the cyclic permutation of the set <math id="p1.m1" class="ltx_Math" alttext="\{1,2,3,4\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo stretchy="false">}</mo></mrow></math> which takes <math id="p1.m1" class="ltx_Math" alttext="1\mapsto 3\mapsto 4\mapsto 2\mapsto 1" display="inline"><mrow><mn>1</mn><mo stretchy="false">↦</mo><mn>3</mn><mo stretchy="false">↦</mo><mn>4</mn><mo stretchy="false">↦</mo><mn>2</mn><mo stretchy="false">↦</mo><mn>1</mn></mrow></math>. The fact that <figure><table id=""  class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_left"><math id="S0.Ex1.m1" class="ltx_Math" alttext="(1342)=(2134)=(4213)=(3421)" display="block"><mrow><mrow><mo stretchy="false">(</mo><mn>1342</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>2134</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>4213</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>3421</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table></figure>
+			 reflects Condition 3.
+		</p>
+	</div>
+	<hgroup class="tag body definition">
+		<h3>
+			Definition
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-box"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span class="index">9</span>
+		</p>
+	</hgroup>
+	<div class="content body definition">
+		<p>
+		A cycle decomposition of a permutation <math id="p1.m1" class="ltx_Math" alttext="\sigma:X\to X" display="inline"><mrow><mi>σ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></mrow></math> is a partition of <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> into subpermutations all of which are cycles.
+		</p>
+	</div>
+	<hgroup class="tag body theorem">
+		<h3>
+			Theorem
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hexagon"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg><span class="index">10</span>
+		</p>
+	</hgroup>
+	<div class="content body theorem">
+		<p>
+		Every permutation <math id="p1.m1" class="ltx_Math" alttext="\sigma:X\to X" display="inline"><mrow><mi>σ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></mrow></math> of a finite set <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> admits a unique cycle decomposition.
+		</p>
+	</div>
+	<hgroup class="tag body proof">
+		<h3>
+			Proof
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square"><rect width="18" height="18" x="3" y="3" rx="2"/></svg>
+		</p>
+	</hgroup>
+	<div class="content body proof">
+		<ul>
+			<li>
+				<p>
+				Uniqueness. Suppose there are two cycle decompositions of <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>. Choose <math id="p1.m1" class="ltx_Math" alttext="x\in X" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></math>, and let <math id="p1.m1" class="ltx_Math" alttext="Y_{1}" display="inline"><msub><mi>Y</mi><mn>1</mn></msub></math> and <math id="p1.m1" class="ltx_Math" alttext="Y_{2}" display="inline"><msub><mi>Y</mi><mn>2</mn></msub></math> be the unique parts of the two partitions containing <math id="p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>. Since <math id="p1.m1" class="ltx_Math" alttext="Y_{1}" display="inline"><msub><mi>Y</mi><mn>1</mn></msub></math> and <math id="p1.m1" class="ltx_Math" alttext="Y_{2}" display="inline"><msub><mi>Y</mi><mn>2</mn></msub></math> are subpermutations, <math id="p1.m1" class="ltx_Math" alttext="\sigma^{-1}(Y_{1}\cap Y_{2})=\sigma^{-1}(Y_{1})\cap\sigma^{-1}(Y_{2})=Y_{1}%
+\cap Y_{2}" display="inline"><mrow><mrow><msup><mi>σ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>Y</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>Y</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>σ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Y</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>∩</mo><mrow><msup><mi>σ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Y</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msub><mi>Y</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>Y</mi><mn>2</mn></msub></mrow></mrow></math> shows <math id="p1.m1" class="ltx_Math" alttext="Y_{1}\cap Y_{2}" display="inline"><mrow><msub><mi>Y</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>Y</mi><mn>2</mn></msub></mrow></math> is a subpermutation of <math id="p1.m1" class="ltx_Math" alttext="Y_{1}" display="inline"><msub><mi>Y</mi><mn>1</mn></msub></math> and <math id="p1.m1" class="ltx_Math" alttext="Y_{2}" display="inline"><msub><mi>Y</mi><mn>2</mn></msub></math>. But as <math id="p1.m1" class="ltx_Math" alttext="Y_{1}" display="inline"><msub><mi>Y</mi><mn>1</mn></msub></math> and <math id="p1.m1" class="ltx_Math" alttext="Y_{2}" display="inline"><msub><mi>Y</mi><mn>2</mn></msub></math> are cycles, and <math id="p1.m1" class="ltx_Math" alttext="Y_{1}\cap Y_{2}" display="inline"><mrow><msub><mi>Y</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>Y</mi><mn>2</mn></msub></mrow></math> contains <math id="p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and is nonempty, <math id="p1.m1" class="ltx_Math" alttext="Y_{1}=Y_{1}\cap Y_{2}=Y_{2}" display="inline"><mrow><msub><mi>Y</mi><mn>1</mn></msub><mo>=</mo><mrow><msub><mi>Y</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>Y</mi><mn>2</mn></msub></mrow><mo>=</mo><msub><mi>Y</mi><mn>2</mn></msub></mrow></math>. Since <math id="p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> was arbitrary, the two partitions have the same parts and are therefore equal.
+				</p>
+			</li>
+			<li>
+				<p>
+				Existence. By strong induction on the size of <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>. There is a unique way to partition a singleton set, and this partition is a cycle decomposition for the unique permutation of a singleton set. For the induction step, choose <math id="p1.m1" class="ltx_Math" alttext="x\in X" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></math>. Let <math id="p1.m1" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> be the image of the map <math id="p1.m1" class="ltx_Math" alttext="\mathbb{Z}\to X" display="inline"><mrow><mi>ℤ</mi><mo stretchy="false">→</mo><mi>X</mi></mrow></math> taking <math id="p1.m1" class="ltx_Math" alttext="k\mapsto\sigma^{k}(x)" display="inline"><mrow><mi>k</mi><mo stretchy="false">↦</mo><mrow><msup><mi>σ</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Then <math id="p1.m1" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> is a subpermutation as is easy to check; its complement is also a subpermutation because complements commute with preimages. If <math id="p1.m1" class="ltx_Math" alttext="Y=X" display="inline"><mrow><mi>Y</mi><mo>=</mo><mi>X</mi></mrow></math> you have a cycle; otherwise, apply the induction hypothesis to <math id="p1.m1" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> and its complement.
+				</p>
+			</li>
+		</ul>
+	</div>
+	<hgroup class="tag body remark">
+		<h3>
+			Remark
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><span class="index">11</span>
+		</p>
+	</hgroup>
+	<div class="content body remark">
+		<p>
+		There is no need to assume <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> is finite. We only defined cycles for finite sets, but condition 1 of the definition makes sense for sets of any size. With this definition, one can show the equivalence relation generated by <math id="p1.m1" class="ltx_Math" alttext="x\sim\sigma(x)" display="inline"><mrow><mi>x</mi><mo>∼</mo><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> partitions <math id="p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> into ”cycles.” However, the natural language in which to express and to prove these statements is the language of group actions (to be covered later).
+		</p>
+	</div>
+	<hgroup class="tag body example">
+		<h3>
+			Example
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pyramid"><path d="M2.5 16.88a1 1 0 0 1-.32-1.43l9-13.02a1 1 0 0 1 1.64 0l9 13.01a1 1 0 0 1-.32 1.44l-8.51 4.86a2 2 0 0 1-1.98 0Z"/><path d="M12 2v20"/></svg><span class="index">12</span>
+		</p>
+	</hgroup>
+	<div class="content body example">
+		<ol>
+			<li>
+				<p>
+				The permutation <figure><table id=""  class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_left_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_left"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\sigma=\left\{\begin{array}[]{l}1\mapsto 2\\
+2\mapsto 8\\
+3\mapsto 6\\
+4\mapsto 3\\
+5\mapsto 1\\
+6\mapsto 4\\
+7\mapsto 7\\
+8\mapsto 5\end{array}\right." display="block"><mrow><mi>σ</mi><mo>=</mo><mrow><mo>{</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mn>1</mn><mo stretchy="false">↦</mo><mn>2</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mn>2</mn><mo stretchy="false">↦</mo><mn>8</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mn>3</mn><mo stretchy="false">↦</mo><mn>6</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mn>4</mn><mo stretchy="false">↦</mo><mn>3</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mn>5</mn><mo stretchy="false">↦</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mn>6</mn><mo stretchy="false">↦</mo><mn>4</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mn>7</mn><mo stretchy="false">↦</mo><mn>7</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mn>8</mn><mo stretchy="false">↦</mo><mn>5</mn></mrow></mtd></mtr></mtable><mi></mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_left_padright"></td>
+</tr></tbody>
+</table></figure>
+					 can be written both more clearly and using fewer symbols as <math id="p1.m1" class="ltx_Math" alttext="(1285)(364)(7)" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mn>1285</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>364</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo></mrow></mrow></math>
+				</p>
+			</li>
+			<li>
+				<p>
+				The composite of <math id="p1.m1" class="ltx_Math" alttext="(13)(42)" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mn>13</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>42</mn><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="p1.m1" class="ltx_Math" alttext="(1342)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1342</mn><mo stretchy="false">)</mo></mrow></math> is <math id="p1.m1" class="ltx_Math" alttext="(1)(23)(4)" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>23</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow></math> which you can determine by tracing the path of a number first through <math id="p1.m1" class="ltx_Math" alttext="(1342)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1342</mn><mo stretchy="false">)</mo></mrow></math>, then through <math id="p1.m1" class="ltx_Math" alttext="(13)(42)" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mn>13</mn><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>42</mn><mo stretchy="false">)</mo></mrow></mrow></math>, and finally writing down the net effect.
+				</p>
+			</li>
+		</ol>
+	</div>
+	<div class="divider">
+	</div>
+	<hgroup class="tag body menu">
+		<h3>
+			Menu
+		</h3>
+		<button>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-chevron-right"><circle cx="12" cy="12" r="10"/><path d="m10 8 4 4-4 4"/></svg>
+		</button>
+	</hgroup>
+	<div class="divider menu">
+	</div>
+	<menu class="content body menu">
+		<li class="home">
+			<a href="https://mmuhleisen.github.io/Homepage/Homepage.html">
+				Marc's Homepage
+			</a>
+		</li>
+		<li>
+			More ...
+		</li>
+		<li class="expand">
+			Collapse All (Coming Soon)
+		</li>
+		<li class="search">
+			<label for="search">
+				Search (Coming Soon)
+			</label>
+			<input type="search" id="search" disabled/>
+		</li>
+		<li class="navigation">
+			See also: (Coming Soon)
+		</li>
+		<li class="webdesign">
+			Site Design: Marc Mühleisen
+		</li>
+		<li class="updated">
+			Updated 09/18/24
+		</li>
+	</menu>
+
+</article>
+		</main>
+		<script type="module">
+			import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+			mermaid.initialize({ startOnLoad: true , theme: "neutral" });
+		</script>
+	</body>
+</html>
