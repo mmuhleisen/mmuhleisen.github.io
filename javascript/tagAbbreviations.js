@@ -21,8 +21,10 @@ const changeTagNames = () => {
 				for (const tag of document.querySelectorAll(".note > .tag." + description))
 					if (entry.contentBoxSize[0].inlineSize < breakPoint) {
 						// replace full heading with abbreviation
-						for (heading of tag.getElementsByTagName("h3"))
-							heading.innerHTML = abbreviation[0];
+						if (tag.classList.contains("proof"))
+							tag.firstElementChild.firstElementChild.firstElementChild.nextSibling.nextSibling.nextSibling.nodeValue = abbreviation[0];
+						else
+							tag.firstElementChild.innerHTML = abbreviation[0];
 						// hide attribution in tag
 						for (attributee of tag.getElementsByClassName("attribution"))
 							attributee.style.display = "none";
@@ -31,8 +33,10 @@ const changeTagNames = () => {
 							attributee.style.display = "inline";
 					} else {
 						// replace abbreviation with full heading
-						for (heading of tag.getElementsByTagName("h3"))
-							heading.innerHTML = abbreviation[1];
+						if (tag.classList.contains("proof"))
+							tag.firstElementChild.firstElementChild.firstElementChild.nextSibling.nextSibling.nextSibling.nodeValue = abbreviation[1];
+						else
+							tag.firstElementChild.innerHTML = abbreviation[1];
 						// show attribution in tag
 						for (attributee of tag.getElementsByClassName("attribution"))
 							attributee.style.display = "block";
