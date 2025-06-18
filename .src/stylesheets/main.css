@@ -1,4 +1,4 @@
-.note > .heading, .note > .heading * {
+.note > .heading * {
   font-weight: bold;
   margin: 0;
 }
@@ -8,6 +8,10 @@
   width: 1em;
   height: 1em;
   position: static;
+}
+
+.note > .tag.heading .lucide {
+  margin: 0 -0.1em;
 }
 
 .note > .tag.heading > h1, .note > .tag.heading > h2 {
@@ -120,16 +124,6 @@
   display: none;
 }
 
-.note > .menu > .search > input {
-  opacity: 0.5;
-  height: 1rlh;
-}
-
-.note > .menu > .search > label {
-  position: absolute;
-  left: 0.5ex;
-}
-
 .note > .menu {
   position: sticky;
   bottom: 0;
@@ -158,6 +152,17 @@
 }
 .note > .tag.menu .lucide {
   vertical-align: text-top;
+}
+
+.note > .content.menu .lucide {
+  width: 1.1cap;
+  height: 1.1cap;
+  position: relative;
+  bottom: -0.05cap;
+}
+
+.note > .content.menu .lucide.lucide-corner-down-right {
+  padding-left: 0.3em;
 }
 
 .note > .content.menu input[type=button] {
@@ -195,12 +200,9 @@
   display: none;
 }
 
-.note > .content > :first-child {
-  margin-top: 0;
-}
-
-.note > .content > :last-child {
-  margin-bottom: 0;
+.note > .content {
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .note > .content .attribution {
@@ -213,11 +215,6 @@
 
 .note > .content .attribution::after {
   content: ")";
-}
-
-.note > .content {
-  overflow-x: auto;
-  overflow-y: hidden;
 }
 
 .note > .content figure {
@@ -244,9 +241,18 @@
 }
 
 .note > .content figure:has(> .ltx_eqn_table) {
-  margin: 0;
+  margin-left: 0;
 }
 
+.note > .content a {
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  .note > .content a {
+    color: white;
+  }
+}
 .note > .divider {
   background: linear-gradient(to right, transparent 40%, grey 40% 60%, transparent 60%);
   grid-area: divider;
@@ -267,43 +273,55 @@
   min-height: 100vh;
   max-width: 80em;
   display: grid;
+  line-height: 1.4;
+  font-family: "NotoSansText";
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/*.note * > p:first-of-type {
-	margin-top: 0;
+.note .ltx_Math {
+  font-family: "STIX2Math";
+  font-size: 105%;
 }
 
-.note * > p:last-of-type {
-	margin-bottom: 0;
-}*/
-a {
-  color: black;
+@font-face {
+  font-family: "STIX2Text";
+  font-style: normal;
+  src: url("fonts/STIX2/Text/STIXTwoText[wght].woff2");
 }
-
-@media (prefers-color-scheme: dark) {
-  a {
-    color: white;
-  }
+@font-face {
+  font-family: "STIX2Text";
+  font-style: italic;
+  src: url("fonts/STIX2/Text/STIXTwoText-Italic[wght].woff2");
+}
+@font-face {
+  font-family: "STIX2Math";
+  font-style: normal;
+  src: url("fonts/STIX2/Math/STIXTwoMath-Regular.woff2");
+}
+@font-face {
+  font-family: "NotoSansText";
+  font-style: normal;
+  src: url("fonts/NotoSans/Text/NotoSans-VariableFont_wdth,wght.ttf");
+}
+@font-face {
+  font-family: "NotoSansText";
+  font-style: italic;
+  src: url("fonts/NotoSans/Text/NotoSans-Italic-VariableFont_wdth,wght.ttf");
+}
+@font-face {
+  font-family: "NotoSansMath";
+  font-style: normal;
+  src: url("fonts/NotoSans/Math/NotoSansMath-Regular.ttf");
 }
 body {
   min-height: 100vh;
   margin: 0;
-  font-family: "Computer Modern", sans-serif;
 }
 
-* {
-  line-height: 1.4;
-}
-
-/*@font-face {
-	font-family: "Computer Modern";
-	src: url('../fonts/cmunss.otf');
-}*/
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
     color: white;
   }
 }
-
-/*# sourceMappingURL=main.css.map */

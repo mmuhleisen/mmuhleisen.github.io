@@ -55,8 +55,8 @@ const showHide = () => {
 	}
 
 	const showHideListeners = document.querySelectorAll('.note > .tag input[type="checkbox"]')
-	const showHideSectionsCheckbox = document.querySelector("#showHideSectionsCheckbox");
-	const showHideProofsCheckbox = document.querySelector("#showHideProofsCheckbox");
+	const showHideSectionsCheckbox = document.getElementById("showHideSectionsCheckbox");
+	const showHideProofsCheckbox = document.getElementById("showHideProofsCheckbox");
 
 	function showHideGlobal (showHideButtonID) {
 		// check whether e.target is the collapse or the expand button
@@ -68,7 +68,6 @@ const showHide = () => {
 		// check whether sections and/or proofs are selected
 		const showHideSections = showHideSectionsCheckbox.checked;
 		const showHideProofs = showHideProofsCheckbox.checked;
-		// run that shit
 		showHideListeners.forEach(listener => {
 			const tag = listener.parentNode.parentNode.parentNode;
 			const fire = (showHideSections && tag.classList.contains("section") && hide == listener.checked)
@@ -83,12 +82,20 @@ const showHide = () => {
 
 	// add listeners to tag checkboxes and activate hide on unchecked ones
 	showHideListeners.forEach(listener => {
-		listener.addEventListener("click", e => showHideLocal(e.currentTarget))
+		listener.addEventListener("click", e => showHideLocal(e.currentTarget));
 		if (!listener.checked)
 			showHideLocal(listener);
 	});
-	document.querySelector("#showButton").addEventListener("click", (e) => showHideGlobal(e.currentTarget.id));
-	document.querySelector("#hideButton").addEventListener("click", (e) => showHideGlobal(e.currentTarget.id));
+	document.getElementById("showButton").addEventListener("click", (e) => showHideGlobal(e.currentTarget.id));
+	document.getElementById("hideButton").addEventListener("click", (e) => showHideGlobal(e.currentTarget.id));
+
+	// ensures that the show/hide icons have the correct visibility when the DOM tree loads
+	window.addEventListener("DOMContentLoaded", () => {
+		showHideListeners[showHideListeners.length - 1].checked = false;
+		showHideListeners.forEach(listener => {
+			showHideFoldIcons(listener.nextElementSibling, !listener.checked);
+		});
+	});
 }
 
 showHide();

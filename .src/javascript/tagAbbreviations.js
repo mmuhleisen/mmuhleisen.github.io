@@ -15,7 +15,7 @@ const changeTagNames = () => {
 	
 	const resizeObserver = new ResizeObserver ((entries) => {
 		// first factor is breakpoint width in em units (?)
-		const breakPoint = 30 * parseFloat(getComputedStyle(note).fontSize);
+		const breakPoint = 30 * parseFloat(window.getComputedStyle(note).fontSize);
 		for (const entry of entries)
 			for (const [description, abbreviation] of shortLong)
 				for (const tag of document.querySelectorAll(".note > .tag." + description))

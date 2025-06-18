@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- character encoding -->
+		
+		<meta
+			charset="utf-8"
+		/>
+		
+		<!-- viewport width -->
+		
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1"
+		/>
+		
+		<!-- open graph data -->
+		
+		<meta
+			property="og:image"
+			content=""
+		/>
+		<meta
+			property="og:title"
+			content="Single Variable Calculus"
+		/>
+		<!-- appearance -->
+		
+		<link
+			rel="icon"
+			href=""
+		/>
+		<link
+			rel="stylesheet"
+			href="../../../../.src/stylesheets/main.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../../../../.src/stylesheets/LaTeXML.css"
+		/>
+		<script
+			src="../../../../.src/javascript/gridLayout.js"
+			defer
+		></script>
+		<script
+			src="../../../../.src/javascript/marginTrim.js"
+			defer
+		></script>
+		<script
+			src="../../../../.src/javascript/showHide.js"
+			defer
+		></script>
+		<script
+			src="../../../../.src/javascript/tagAbbreviations.js"
+			defer
+		></script>
+		<meta
+			name="author"
+			content="Marc Muhleisen"
+		/>
+		<title>
+			
+Single Variable Calculus
+		</title>
+	</head>
+	<body>
+		<main>
+<article class="note">
+	<hgroup class="tag heading title">
+		<h1>
+			Title
+		</h1>
+	</hgroup>
+	<h1 class="content heading title">
+	Single Variable Calculus
+	</h1>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		University of Pennsylvania<br/>MATH 1400<br/>Summer II, 2025
+		</p>
+	</div>
+	<hgroup class="tag heading section" id="where-and-when" >
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection1"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">1</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection1">
+		Where and When 
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		In case you need a passcode for the lectures, see <a class="externalLink" href="https://canvas.upenn.edu/" >Canvas</a> > Announcements > First Meeting of Math 1400.
+		</p>
+		<figure>
+			<table>
+				<tr>
+					<td>Meeting</td>
+					<td>Days</td>
+					<td>Time</td>
+					<td>Location</td>
+				</tr>
+				<tr>
+					<td>Lecture</td>
+					<td>MWF</td>
+					<td>12-2:30pm</td>
+					<td>Canvas > Zoom</td>
+				</tr>
+				<tr>
+					<td>Office Hours</td>
+					<td>Tu</td>
+					<td>TBA</td>
+					<td>Canvas > Announcements > Office Hours</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Th</td>
+					<td>TBA</td>
+					<td>Canvas > Announcements > Office Hours</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Sa</td>
+					<td>TBA</td>
+					<td>Canvas > Announcements > Office Hours</td>
+				</tr>
+			</table>
+		</figure>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection2"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">2</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection2">
+		Contact
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<figure>
+			<table>
+				<tr>
+					<td>Name</td>
+					<td>Role</td>
+					<td>Contact</td>
+					<td>Pronouns</td>
+				</tr>
+				<tr>
+					<td>Marc</td>
+					<td>Instructor</td>
+					<td>Email: <a class="externalLink" href="https://canvas.upenn.edu/" >Canvas</a> > Syllabus</td>
+					<td>he/him</td>
+				</tr>
+			</table>
+		</figure>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection3"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">3</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection3">
+		About the Instructor
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Hi, I’m Marc. I am a graduate student in the mathematics department here at Penn. I arrived in the middle of the pandemic, specialize in algebraic geometry and category theory (which I will eagerly talk about to anyone interested), and will graduate next year in the Spring. I gained a great deal of experience communicating math during my time at Penn. I have been a TA for Penn’s calculus, linear algebra, and discrete math courses, I have advised Penn math majors in our department’s Directed Reading Program, I’ve been employed by a private tutoring firm where I worked with high school students, I volunteered through Penn as an arithmetic teacher in a New Jersey state prison, I participate in our department’s seminars and attend conferences, and I have already taught calculus twice as an instructor. I have met many students at many levels through these varied activities, I have enjoyed discussing all kinds of math with them, and now I look forward to sharing with you some ideas that laid the foundation for much of modern science.
+		</p>
+	</div>
+	<hgroup class="tag heading section" id="prerequisites" >
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection4"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">4</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection4">
+		Prerequisites 
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Suggested:
+		</p>
+		<ul>
+			<li>
+				<p>
+				Familiarity with calculus at the level of MATH 1300.
+				</p>
+			</li>
+		</ul>
+		<p>
+		Required:
+		</p>
+		<ul>
+			<li>
+				<p>
+				Solid grasp of precalculus.
+				</p>
+			</li>
+		</ul>
+		<p>
+		To be clear, MATH 1400 does not assume prior exposure to calculus—all calculus concepts will be fully explained. However, the pace of MATH 1400 is fast, and it is because of this fast pace that the course is intended for students with prior exposure to calculus. Students seeking a gentler introduction to calculus are advised to take MATH 1300 instead, but should note that MATH 1300 correspondingly covers fewer topics. (For example, students may find that MATH 1300 is not adequate preparation for multivariable calculus, MATH 1410.)
+		</p>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection5"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">5</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection5">
+		Course Description
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		This is a complete course in single variable calculus. Traditionally, this subject is divided into two halves called Calculus I and Calculus II. At a high level, Calculus I is the mathematical study of change. The idea is to take a function <math id="p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> and come up with a set of tools which can be used to answer the following question.
+		</p>
+	</div>
+	<hgroup class="tag body question">
+		<h3>
+			Question
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-help"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg><span class="index">1</span>
+		</p>
+	</hgroup>
+	<div class="content body question">
+		<p>
+		When the input of <math id="p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> changes from <math id="p1.m1" class="ltx_Math" alttext="x_{0}" display="inline"><msub><mi>x</mi><mn>0</mn></msub></math> to <math id="p1.m1" class="ltx_Math" alttext="x_{1}" display="inline"><msub><mi>x</mi><mn>1</mn></msub></math>, what can be said about how much the output of <math id="p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> changes? In other words, what can be said about the difference <math id="p1.m1" class="ltx_Math" alttext="f(x_{1})-f(x_{0})" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math>?
+		</p>
+	</div>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		The tools which answer this question revolve around an operation called “differentiation,” which is why Calculus I is also called differential calculus. In addition to its intrinsic usefulness in providing answers to the above question, applications also include estimating approximation errors, optimization, and understanding the effects of constraints.
+		</p>
+		<p>
+		Calculus II, again at a high level, is the mathematical study of size. It begins with the observation that the concept of area also plays a key role in answering the above question. By leveraging our ability to answer this question, we will learn not only a great deal about area, but also about length and volume. The expressions which represent areas, lengths, and volumes are called integrals, which is why Calculus II is also called integral calculus. In addition to <em>its</em> intrinsic usefulness, applications include finding probabilities, deciding on the convergence of certain infinite sums, and predicting future values of time-dependent quantities.
+		</p>
+	</div>
+	<hgroup class="tag body warning">
+		<h3>
+			Warning
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg><span class="index">2</span>
+		</p>
+	</hgroup>
+	<div class="content body warning">
+		<p>
+		The official title of this course, “Calculus, Part I,” is misleading. That’s because at Penn, this course covers not only what is usually called Calculus I, but also Calculus II (see above). This has negatively impacted students in two ways.
+		</p>
+		<ol>
+			<li>
+				<p>
+				When other institutions see “Calculus, Part I” on a transcript, they may hesitate or refuse to give you credit for a course which also covers Calculus II. Please let me know if this concerns you; while I have written letters in the past to get these issues resolved, there is no guarantee it will work in every case.
+				</p>
+			</li>
+			<li>
+				<p>
+				Students occasionally sign up for this class expecting only to cover Calculus I. When they discover they’re actually in a fast-paced Calculus I + II course, it has happened that it was already too late to switch to a different course. See the <a class="internalLink" href="#prerequisites" >Prerequisites</a> section for more information.
+				</p>
+			</li>
+		</ol>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection6"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">6</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection6">
+		Schedule
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<figure>
+			<table>
+				<tr>
+					<td> </td>
+					<td>Date</td>
+					<td>Agenda</td>
+				</tr>
+				<tr>
+					<td><strong>Week 1</strong></td>
+					<td></td>
+					<td><strong>Calculation and Interpretation of Derivatives</strong></td>
+				</tr>
+				<tr>
+					<td>Day 01</td>
+					<td>7/07</td>
+					<td>Functions<br/>Closed-Form Expressions<br/>Sum/Product/Chain Rules</td>
+				</tr>
+				<tr>
+					<td>Day 02</td>
+					<td>7/09</td>
+					<td>Continuity<br/>Limits<br/>L’Hôpital’s Rule</td>
+				</tr>
+				<tr>
+					<td>Day 03</td>
+					<td>7/11</td>
+					<td>Monotonicity<br/>Linear Approximation<br/>Antiderivatives</td>
+				</tr>
+				<tr>
+					<td><strong>Week 2</strong></td>
+					<td></td>
+					<td><strong>Calculation and Interpretation of Integrals</strong></td>
+				</tr>
+				<tr>
+					<td>Day 04</td>
+					<td>7/14</td>
+					<td><math id="p1.m1" class="ltx_Math" alttext="u" display="inline"><mi>u</mi></math>-Substitution<br/>Integration by Parts</td>
+				</tr>
+				<tr>
+					<td>Day 05</td>
+					<td>7/16</td>
+					<td>Area under a Curve<br/>Fundamental Theorem of Calculus</td>
+				</tr>
+				<tr>
+					<td>Day 06</td>
+					<td>7/18</td>
+					<td>Improper Integrals<br/>Circular Symmetry</td>
+				</tr>
+				<tr>
+					<td><strong>Week 3</strong></td>
+					<td></td>
+					<td><strong>Higher Approximations and Taylor Series</strong></td>
+				</tr>
+				<tr>
+					<td>Day 07</td>
+					<td>7/21</td>
+					<td>Convexity<br/>Optimization</td>
+				</tr>
+				<tr>
+					<td>Day 08</td>
+					<td>7/23</td>
+					<td>Infinite Sums<br/>Convergence Tests</td>
+				</tr>
+				<tr>
+					<td>Day 09</td>
+					<td>7/25</td>
+					<td>Formal Power Series<br/>Radius of Convergence</td>
+				</tr>
+				<tr>
+					<td><strong>Week 4</strong></td>
+					<td></td>
+					<td><strong>Harder Integrals and Constraints</strong></td>
+				</tr>
+				<tr>
+					<td>Day 10</td>
+					<td>7/28</td>
+					<td>Partial Fractions<br/>Trig Substitution</td>
+				</tr>
+				<tr>
+					<td>Day 11</td>
+					<td>7/30</td>
+					<td>Implicit Differentiation<br/>Related Rates<br/>Ordinary Differential Equations</td>
+				</tr>
+				<tr>
+					<td>Day 12</td>
+					<td>8/01</td>
+					<td>Parametric Equations<br/>Tangency and Curvature<br/>Arc Length and Swept Area</td>
+				</tr>
+				<tr>
+					<td><strong>Week 5</strong></td>
+					<td></td>
+					<td><strong>Calculus in the Real World</strong></td>
+				</tr>
+				<tr>
+					<td>Day 13</td>
+					<td>8/04</td>
+					<td>Probability<br/>Legendre Transform<br/>Bonus Topics</td>
+				</tr>
+				<tr>
+					<td>Day 14</td>
+					<td>8/06</td>
+					<td>Applications to Natural Sciences<br/>Applications to Social Sciences<br/>Review</td>
+				</tr>
+				<tr>
+					<td>Day 15</td>
+					<td>8/08</td>
+					<td>Final Exam</td>
+				</tr>
+			</table>
+		</figure>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection7"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">7</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection7">
+		Grading
+	</label></h2>
+	<hgroup class="tag heading subsection">
+		<h3>
+			Subsection
+		</h3>
+		<p><label>
+			<input type="checkbox" id="showHideSubsection7.1"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">7.1</span>
+		</label></p>
+	</hgroup>
+	<h3 class="content heading subsection"><label for="showHideSubsection7.1">
+		Raw Scores
+	</label></h3>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Your raw score will be determined from the components itemized below.
+		</p>
+		<ul>
+			<li>
+				<p>
+				(0%) Homework.
+				</p>
+				<ul>
+					<li>
+						<p>
+						For every topic on the syllabus, dozens of problems will be listed on Canvas, spread across various calculus textbooks as well as a variety of online resources. Homework will neither be collected nor graded.
+						</p>
+					</li>
+					<li>
+						<p>
+						You are absolutely not expected to do all the homework problems. There are deliberately far too many problems to solve in between classes, and the point is to stop when you feel confident about the material.
+						</p>
+					</li>
+					<li>
+						<p>
+						You are expected to find solutions to the homework problems you do work out either in the back of the textbook they were assigned from, online, or by any other means (see <a class="internalLink" href="#tech-policy" >Technology Policy</a>).
+						</p>
+					</li>
+					<li>
+						<p>
+						If you cannot reconcile your own solution to a problem with any solutions you look up, come talk to me about it. You will always have a chance to talk to me in between classes (see <a class="internalLink" href="#office-hours" >Office Hours</a>).
+						</p>
+					</li>
+					<li>
+						<p>
+						Be sure to seek out the harder problems. If you attempt to solve them and fail, you’ll get a sense of what you still need to do to understand the material really well; if you succeed, it will boost your confidence considerably. Either way, easy problems will seem much easier. (You’ll also be better prepared for the quizzes, which tend to be hard.)
+						</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+				(25%) Syllabus Assessment
+				</p>
+				<ul>
+					<li>
+						<p>
+						The purpose of the syllabus assessment is to prove to me that you’ve read this syllabus and understood how things are going to work.
+						</p>
+					</li>
+					<li>
+						<p>
+						Timing
+						</p>
+						<ul>
+							<li>
+								<p>
+								The early deadline for the syllabus assessment is the beginning of the second class. There is no penalty for missing this deadline—its sole purpose is to motivate you to get the syllabus assessment out of the way quickly.
+								</p>
+							</li>
+							<li>
+								<p>
+								The final deadline for the syllabus assessment is 5pm the day before the last day to add classes (see <a class="internalLink" href="#registrar" >Registrar Dates</a>). If you miss this deadline, you‘ll still have 24 hours to switch to a different course.
+								</p>
+							</li>
+							<li>
+								<p>
+								This year, unusually, the early and final deadlines are <strong>five hours apart</strong>.
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p>
+						Instructions
+						</p>
+						<ul>
+							<li>
+								<p>
+								You will take the syllabus assessment on Canvas.
+								</p>
+							</li>
+							<li>
+								<p>
+								You may refer to the syllabus during the syllabus assessment, you will have unlimited attempts, you will have unlimited time, and if you’re Emperor Palpatine you will also have unlimited power.
+								</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+				(50%) Quizzes
+				</p>
+				<ul>
+					<li>
+						<p>
+						Each quiz will emphasize the material covered in the previous class; at the same time, each quiz may be cumulative.
+						</p>
+					</li>
+					<li>
+						<p>
+						Timing
+						</p>
+						<ul>
+							<li>
+								<p>
+								The pace of the course demands each class begin with a quiz.
+								</p>
+							</li>
+							<li>
+								<p>
+								There will <em>not</em> be a quiz on the first day of class (or on the day of the final).
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p>
+						Instructions
+						</p>
+						<ul>
+							<li>
+								<p>
+								Each quiz is designed to take ten minutes, but you will have fifteen.
+								</p>
+							</li>
+							<li>
+								<p>
+								You will take the quizzes on Canvas during the first fifteen minutes of class.
+								</p>
+							</li>
+							<li>
+								<p>
+								You must be present in class with your camera on and microphone off while taking the quizzes.
+								</p>
+							</li>
+							<li>
+								<p>
+								With the exception of receiving live assistance from or working together with another person, you may use any means whatsoever to complete the quizzes. This includes permission to use computer algebra systems, search engines, and generative AI.
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p>
+						Missed Quizzes
+						</p>
+						<ul>
+							<li>
+								<p>
+								You can miss two quizzes with no impact on your grade—these quizzes will be dropped automatically. This policy is intended to cover prearranged absences, switching into the course after the start of term, and medical/family emergencies.
+								</p>
+							</li>
+							<li>
+								<p>
+								Additional missed quizzes will automatically receive scores of zero. No exceptions will be made.
+								</p>
+							</li>
+							<li>
+								<p>
+								You do not have to announce ahead of time or explain why you miss a quiz, which means you can miss a quiz for any reason at all. However, you are strongly advised to miss quizzes only in circumstances beyond your control.
+								</p>
+							</li>
+							<li>
+								<p>
+								You can (of course) still attend class even if you miss the quiz at the beginning.
+								</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+				(25%) Final Exam.
+				</p>
+				<ul>
+					<li>
+						<p>
+						There will be a cumulative final exam during the last class.
+						</p>
+					</li>
+					<li>
+						<p>
+						Unless you have a pre-approved arrangement, missing the final will result in a grade of zero. No exceptions will be made.
+						</p>
+					</li>
+					<li>
+						<p>
+						Instructions
+						</p>
+						<ul>
+							<li>
+								<p>
+								The final is designed to take 1.5 hours, but you will have 2.5 hours.
+								</p>
+							</li>
+							<li>
+								<p>
+								You will take the final exam on Canvas during the last class.
+								</p>
+							</li>
+							<li>
+								<p>
+								You must be present in class with your camera on and microphone off while taking the final exam.
+								</p>
+							</li>
+							<li>
+								<p>
+								With the exception of receiving live assistance from or working together with another person, you may use any means whatsoever to complete the final. This includes permission to use computer algebra systems, search engines, and generative AI.
+								</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<hgroup class="tag heading subsection">
+		<h3>
+			Subsection
+		</h3>
+		<p><label>
+			<input type="checkbox" id="showHideSubsection7.2"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">7.2</span>
+		</label></p>
+	</hgroup>
+	<h3 class="content heading subsection"><label for="showHideSubsection7.2">
+		Curved Grades
+	</label></h3>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		In my experience grading for the Penn math department, it is rare that final grades are assigned according to the traditional rubric where letter grades are all spaced 10% apart. I believe the situation is similar at most top universities. In our class we will also abandon this tradition. Instead, I will determine your final grades using a curve.
+		</p>
+		<p>
+		When grades are curved, your score only has significance when compared to the average/median. This means a 50% on a quiz isn’t necessarily a good or a bad score, it all depends on how the rest of the class does. I will always report the statistics of a quiz when they are graded, and you should be able to see statistics on Canvas, too.
+		</p>
+		<p>
+		In most math classes I have graded for, the average and/or median corresponded roughly to a B+. This means if you do around average, you can assume your grade is somewhere in the range of high B to low A-. If you score above average by a healthy amount, you’re solidly in the A range; if you do worse, you’re solidly in the B range; and if you do significantly worse than the average, you’re at risk of getting a C or below. You will not receive letter grades on individual assignments, only one letter grade at the end of the class.
+		</p>
+		<p>
+		The exact way your letter grades are calculated is complicated, but it involves choosing ranges for each letter grade in such a way that the resulting distribution approximately matches grade distributions for the same class from previous years. This way, from the point of view of your final grades, you’re neither at an advantage nor at a disadvantage by having me as your instructor—even if you find my assessments difficult.
+		</p>
+	</div>
+	<hgroup class="tag heading section" id="tech-policy" >
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection8"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">8</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection8">
+		Technology Policy 
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Since homework will not be collected, you must not only choose the problems you will solve, but also, once you’ve done them, look up answers yourself to be sure your work is correct. To that end, several textbooks list solutions in an appendix or work certain problems out in an accompanying student solution manual; moreover, a great many websites contain repositories of calculus problems with solutions. You are encouraged to use any of these <a class="internalLink" href="#resources" >Resources</a>, not just the few listed in next section (but you are not required to use any one in particular).
+		</p>
+		<p>
+		To some extent, I also encourage you to use Generative AI such as ChatGPT and Computer Algebra Systems such as Wolfram Alpha. If you’re stuck on a routine exercise, it means you’re missing something basic. In this situation, you might as well ask Generative AI to help you out—on the one hand because routine exercises are where Generative AI is the most reliable, and on the other hand because chances are the only thing you’re missing is something simple enough for the software to explain correctly. Do not ever use Generative AI for help on a difficult problem. You are supposed to get stuck on difficult problems, and the process of puzzling it out—however long it takes—is the undisputed, number one way to grapple with the concepts and learn what you’re actually doing. For now there is also the danger Generative AI will get difficult problems completely wrong, with or without you noticing. Computer Algebra Systems meanwhile have much higher accuracy, and are great for checking your work on a problem if you can’t find a solution somewhere. The downside is they don’t understand word problems, so they’re only useful once you’ve set up the equations.
+		</p>
+	</div>
+	<hgroup class="tag heading section" id="resources" >
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection9"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">9</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection9">
+		Resources 
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Many but not all of the following resources are available for free. Regarding textbooks, remember you have access to the <a class="externalLink" href="https://www.library.upenn.edu/mpa" >MPA library</a> as well as <a class="externalLink" href="https://www.library.upenn.edu/" >other libraries</a> at Penn. Let me know if you benefitted from a calculus resource I have not listed so I may recommend it to students in the future.
+		</p>
+		<ul>
+			<li>
+				<p>
+				Some traditional Calculus textbooks (alphabetical by last name)
+				</p>
+				<ul>
+					<li>
+						<p>
+						<em>Calculus</em> by Howard Anton, Irl Bivens, and Stephen Davis.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus</em> (Volume 1) by Tom Apostol.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus and Its Applications</em> by Larry Goldstein et al.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Thomas’ Calculus</em> by Joel Hass et al.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus: Single Variable</em> by Deborah Hughes-Hallett et al.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>First Course in Calculus</em> by Serge Lang.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus</em> by Ron Larson and Bruce Edwards.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus</em> by Jon Rogawski, Colin Adams, and Robert Franzosa.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus</em> by Michael Spivak.
+						</p>
+					</li>
+					<li>
+						<p>
+						<em>Calculus</em> by James Stewart.
+						</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+				Learning Calculus online (no particular order)
+				</p>
+				<ul>
+					<li>
+						<p>
+						Paul Dawkins’s <a class="externalLink" href="https://tutorial.math.lamar.edu/" >Online Math Notes</a>, which has a huge repository of both <a class="externalLink" href="https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,P" >problems</a> and <a class="externalLink" href="https://tutorial.math.lamar.edu/GetFile.aspx?file=B,20,S" >solutions</a>.
+						</p>
+					</li>
+					<li>
+						<p>
+						Gilbert Strang’s <a class="externalLink" href="https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/" >Calculus Online Textbook</a>. Solutions are available chapter-by-chapter in the online <a class="externalLink" href="https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/pages/instructors-manual/" >instructor’s manual</a>.
+						</p>
+					</li>
+					<li>
+						<p>
+						David Guichard’s <a class="externalLink" href="https://www.whitman.edu/mathematics/multivariable/index.cgi" >online textbook</a>.
+						</p>
+					</li>
+					<li>
+						<p>
+						Sigurd Angenent, an author of a calculus textbook used at the University of Wisconsin Madison, links to his book in the README file of its <a class="externalLink" href="https://github.com/SigurdAngenent/WisconsinCalculus" >GitHub repository</a>.
+						</p>
+					</li>
+					<li>
+						<p>
+						The works of our very own faculty at Penn.
+						</p>
+						<ul>
+							<li>
+								<p>
+								Nakia Rimmer’s “Calculus II Workbook,” which contains over a hundred worked-out integral calculus problems, is available from the MPA library in DRL or can be purchased from his <a class="externalLink" href="https://calccoach.com" >Calc Coach</a> website.
+								</p>
+							</li>
+							<li>
+								<p>
+								Rimmer’s <a class="externalLink" href="https://youtube.com/@nakiarimmer?si=2WyBsF4r-kIvrYQE" >YouTube channel</a> also has playlists on a variety of calculus topics.
+								</p>
+							</li>
+							<li>
+								<p>
+								Robert Ghrist’s <a class="externalLink" href="https://youtube.com/@prof-g?si=9H4jQx5FpdWT4gVr" >YouTube channel</a> contains the single variable calculus video textbook “Calculus Green.” As of this writing it remains a work in progress.
+								</p>
+							</li>
+							<li>
+								<p>
+								The Penn Online Learning <a class="externalLink" href="https://youtube.com/playlist?list=PLKc2XOQp0dMwj9zAXD5LlWpriIXIrGaNb&si=XUA64pnhA1_i_wUP" >YouTube channel</a> hosts an earlier anthology of Ghrist’s single variable calculus videos.
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p>
+						The Fall 2006 Single Variable Calculus course taught by David Jerison at MIT on the <a class="externalLink" href="https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/" >OpenCourseWare</a> site. If you look around the assignments and exams tabs, you’ll find many problems with accompanying solutions. I first learned calculus watching the recorded lectures available here!
+						</p>
+					</li>
+					<li>
+						<p>
+						Our syllabus overlaps considerably with the College Board’s BC Calculus curriculum, so you may consider making use of the corresponding <a class="externalLink" href="https://www.khanacademy.org/math/ap-calculus-bc" >Khan Academy course</a>, which consists of videos and check-your-understanding type problems.
+						</p>
+					</li>
+					<li>
+						<p>
+						The quality of <a class="externalLink" href="https://www.wikipedia.org/" >Wikipedia</a> math articles typically ranges from good to excellent. While they often contain examples, they never contain practice problems.
+						</p>
+					</li>
+					<li>
+						<p>
+						H. Jerome Keisler’s textbook <a class="externalLink" href="https://people.math.wisc.edu/~hkeisler/calc.html" >Elementary Calculus</a> is remarkable for taking the concept of infinitesimal quantities very seriously. We will not take this approach in our class, but do take a look if you’re interested!
+						</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+				Calculus Software (no particular order)
+				</p>
+				<ul>
+					<li>
+						<p>
+						<a class="externalLink" href="https://www.wolframalpha.com/" >Wolfram Alpha</a>, a lite (but easier to use) version of <a class="externalLink" href="https://www.wolfram.com/mathematica/" >Mathematica</a>
+						</p>
+					</li>
+					<li>
+						<p>
+						<a class="externalLink" href="https://www.maplesoft.com/products/Maple/" >Maple</a>
+						</p>
+					</li>
+					<li>
+						<p>
+						<a class="externalLink" href="https://mathsolver.microsoft.com/en" >Microsoft Math Solver</a>
+						</p>
+					</li>
+					<li>
+						<p>
+						<a class="externalLink" href="https://www.symbolab.com/" >Symbolab</a>
+						</p>
+					</li>
+					<li>
+						<p>
+						Regarding Generative AI, see the <a class="internalLink" href="#tech-policy" >Technology Policy</a> section above.
+						</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p>
+				The resources on the department’s <a class="externalLink" href="https://www.math.upenn.edu/undergraduate/getting-help/calculus-help" >Calculus Help</a> site.
+				</p>
+			</li>
+		</ul>
+		<p>
+		I was not compensated in any way for listing any of the resources above.
+		</p>
+	</div>
+	<hgroup class="tag heading section" id="office-hours" >
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection10"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">10</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection10">
+		Office Hours 
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		I will hold three weekly, hour-long, optional, open-door Q&A sessions where you and your peers can come ask me any calculus question you have. The meetings will take place on Zoom every Tuesday, Thursday, and Saturday at times determined by survey, which will go live on the first day of the term, and whose results will be announced shortly after the first class. See the <a class="internalLink" href="#where-and-when" >Where and When</a> section for more information.
+		</p>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection11"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">11</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection11">
+		Email Policy
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		I will answer your emailed administrative questions promptly. Although I won’t email answers to calculus questions, you are still welcome to send them. I will read them and go over the answers at the beginning of the next class or office hour which you attend.
+		</p>
+		<p>
+		Even better than emailing me, you may want to consider starting a class discussion about your question under <a class="externalLink" href="https://canvas.upenn.edu/" >Canvas</a> > Discussions. Check your Canvas notification settings to make sure you get emails when a new discussion is started.
+		</p>
+	</div>
+	<hgroup class="tag heading section" id="registrar" >
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection12"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">12</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection12">
+		Registrar Dates 
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<figure>
+			<table>
+				<tr>
+					<td>Date</td>
+					<td>Event</td>
+				</tr>
+				<tr>
+					<td>7/03</td>
+					<td>Session II classes begin</td>
+				</tr>
+				<tr>
+					<td>7/10</td>
+					<td>Last day to add/drop a course with no financial obligation</td>
+				</tr>
+				<tr>
+					<td>7/17</td>
+					<td>Last day to drop a course with 50% financial obligation</td>
+				</tr>
+				<tr>
+					<td>8/02</td>
+					<td>Last day to withdraw from a course</td>
+				</tr>
+				<tr>
+					<td>8/08</td>
+					<td>Session II classes end</td>
+				</tr>
+			</table>
+		</figure>
+	</div>
+	<hgroup class="tag body warning">
+		<h3>
+			Warning
+		</h3>
+		<p>
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-triangle-alert"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg><span class="index">3</span>
+		</p>
+	</hgroup>
+	<div class="content body warning">
+		<p>
+		If for whatever reason you choose to drop or to withdraw from the course, please note that it is <em>not</em> an automatic process because lack of attendance does <em>not</em> get reported to the registrar. You must inform the registrar yourself of your intent to drop/withdraw using Path@Penn, and the date by which you do so may have an effect on your <strong>financial obligation to the university</strong>. Official dates and more information can be found on the <a class="externalLink" href="https://summer.sas.upenn.edu/academic-calendar" >PennSummer</a> website—do not rely on the above dates.
+		</p>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection13"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">13</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection13">
+		Feedback
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Feedback on the course is always welcome. You may email me at any time, or contact me anonymously using one of the following channels.
+		</p>
+		<ul>
+			<li>
+				<p>
+				The google form linked at <a class="externalLink" href="https://canvas.upenn.edu/" >Canvas</a> > Syllabus
+				</p>
+			</li>
+			<li>
+				<p>
+				An anonymous class discussion available at Canvas > Discussions
+				</p>
+			</li>
+			<li>
+				<p>
+				An official course feedback survey, available from 7/19/25 to 7/25/25
+				</p>
+			</li>
+		</ul>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection14"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">14</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection14">
+		Accommodations
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Students requiring academic accommodations should register their needs with the office of Student Disabilities Services (SDS). Instructors and TAs cannot provide any academic accommodations without prior instruction from SDS. In addition, if you plan to register a disability with that office which will require any action, you should email me within 48 hours of joining the course, even if your accommodations have not yet been registered or approved. You do not need to disclose the nature of your accommodations or disability, but knowing that you are registered makes it easier to work with SDS to get you the accommodations you need.
+		</p>
+	</div>
+	<hgroup class="tag heading section">
+		<h2>
+			Section
+		</h2>
+		<p><label>
+			<input type="checkbox" id="showHideSection15"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-section"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M16 5a4 3 0 0 0-8 0c0 4 8 3 8 7a4 3 0 0 1-8 0"/><path d="M8 19a4 3 0 0 0 8 0c0-4-8-3-8-7a4 3 0 0 1 8 0"/></svg><span class="index">15</span>
+		</label></p>
+	</hgroup>
+	<h2 class="content heading section"><label for="showHideSection15">
+		Discrimination and Harassment
+	</label></h2>
+	<hgroup class="tag body exposition">
+		<h3>
+			Exposition
+		</h3>
+	</hgroup>
+	<div class="content body exposition">
+		<p>
+		Your peers are your most valuable learning resource, and it is imperative that we maintain a welcoming environment, inside and outside of class, where every single student is empowered as a member of the course community. We take all of Penn’s discrimination and harassment policies very seriously.
+		</p>
+	</div>
+	<div class="divider">
+	</div>
+	<hgroup class="tag body menu">
+		<h3>
+			Menu
+		</h3>
+		<p><label>
+			<input type="checkbox"/><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/><path d="M12 5v14"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><path d="M5 12h14"/></svg>
+		</label></p>
+	</hgroup>
+	<div class="divider menu">
+	</div>
+	<menu class="content body menu">
+		<li class="home">
+			<a href="https://mmuhleisen.github.io/Homepage/Homepage.html">
+				Marc's Homepage
+			</a>
+		</li>
+		<li class="expand">
+			<label>Expand All<input type="button" id="showButton"/></label>/<label>Collapse All<input type="button" id="hideButton"/></label>
+		</li>
+		<li class="expand">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-corner-down-right"><desc><a href="https://lucide.dev/license">Licensed Under ISC</a></desc><polyline points="15 10 20 15 15 20"/><path d="M4 4v7a4 4 0 0 0 4 4h12"/></svg>
+			<label>Sections<input type="checkbox" id="showHideSectionsCheckbox" checked/></label>/<label>Proofs<input type="checkbox" id="showHideProofsCheckbox"/></label>
+		</li>
+		<li class="tags">
+			Tags (Coming Soon)
+		</li>
+		<li class="design">
+			Site Design: Marc Mühleisen
+		</li>
+		<li class="updated">
+			Updated 06/18/25
+		</li>
+	</menu>
+
+</article>
+		</main>
+		<script type="module">
+			import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+			mermaid.initialize({ startOnLoad: true , theme: "neutral" });
+		</script>
+	</body>
+</html>
