@@ -1,8 +1,15 @@
 const showHide = () => {
 
-	function notesInSection (nextNote) {
+	function continueSearch (note, tags) {
+		let stop = false;
+		for (const tag of tags)
+			stop ||= note.classList.contains(tag)
+		return !stop
+	}
+
+	function notesUntilTags (nextNote, endSearchTags) {
 		let noteList = [];
-		while (!(nextNote.classList.contains("section") || nextNote.classList.contains("divider"))) {
+		while (continueSearch(nextNote, endSearchTags)) {
 			noteList.push(nextNote);
 			nextNote = nextNote.nextElementSibling;
 		}
@@ -16,7 +23,39 @@ const showHide = () => {
 
 	function showHideSection (tag, hide) {
 		const display = hide ? "none" : "";
-		notesInSection(tag.nextElementSibling.nextElementSibling).forEach(element => {
+		if (hide) {
+			const endSectionSearchTags = ["section", "divider"];
+			const nextNote = tag.nextElementSibling.nextElementSibling;
+			notesUntilTags(nextNote, endSectionSearchTags).forEach(element => {
+				element.style.display = display;
+			});
+		} else {
+			const endSubsectionSearchTags = ["section", "subsection", "divider"];
+			let headerNote = tag.nextElementSibling.nextElementSibling;
+			let bodyNotes = notesUntilTags(headerNote, endSubsectionSearchTags);
+			bodyNotes.forEach(element => {
+				element.style.display = display;
+			});
+			headerNote = bodyNotes.length ? bodyNotes.pop().nextElementSibling : headerNote;
+			while (headerNote.classList.contains("subsection")) {
+				// show subsection header
+				headerNote.style.display = display;
+				headerNote.nextElementSibling.style.display = display;
+				// get listener and call showHideLocal on it
+				showHideLocal(headerNote.querySelector('input[type="checkbox"]'));
+				// jump to end of subsection
+				headerNote = headerNote.nextElementSibling.nextElementSibling;
+				bodyNotes = notesUntilTags(headerNote, endSubsectionSearchTags);
+				headerNote = bodyNotes.length ? bodyNotes.pop().nextElementSibling : headerNote;
+			}
+		}
+	}
+
+	function showHideSubsection (tag, hide) {
+		const display = hide ? "none" : "";
+		const endSubsectionSearchTags = ["section", "subsection", "divider"];
+		const nextNote = tag.nextElementSibling.nextElementSibling;
+		notesUntilTags(nextNote, endSubsectionSearchTags).forEach(element => {
 			element.style.display = display;
 		});
 	}
@@ -45,7 +84,7 @@ const showHide = () => {
 		if (tag.classList.contains("section"))
 			showHideSection(tag, hide);
 		else if (tag.classList.contains("subsection"))
-			showHideSection(tag, hide);
+			showHideSubsection(tag, hide);
 		else if (tag.classList.contains("proof"))
 			showHideProof(tag, hide);
 		else if (tag.classList.contains("menu"))

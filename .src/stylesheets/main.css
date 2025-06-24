@@ -70,13 +70,18 @@
   display: none;
 }
 
-.note > .tag.subsection .lucide {
-  vertical-align: sub;
-  width: 1em;
-  height: 1em;
-  position: static;
+.note > .subsection, .note > .subsection * {
+  font-size: medium;
 }
 
+/*
+.note > .tag.subsection .lucide {
+	vertical-align: sub;
+	width: 1em;
+	height: 1em;
+	position: static;
+}
+*/
 .note > dl.cv > dt.what + dd {
   grid-column: 1/3;
   font-weight: bold;
