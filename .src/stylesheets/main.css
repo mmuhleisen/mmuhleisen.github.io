@@ -192,6 +192,8 @@
 .note > .tag > .attribution {
   font-variant: small-caps;
   font-size: 80%;
+  max-width: 8em;
+  text-align: end;
 }
 
 .note > .tag .lucide {
